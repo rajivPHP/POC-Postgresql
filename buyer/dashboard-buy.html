@@ -1,0 +1,780 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>dRishti</title>
+    <link rel="stylesheet" type="text/css" href="../_/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../_/css/zozo-tab.css" />
+    <link rel="stylesheet" type="text/css" href="../_/css/zozo.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../_/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_/js/zozo.js"></script>
+    <script>
+    $(document).ready(function () {
+
+      $('.media-plan').change(function(){
+        var budget_val = $('#budget-val').val();
+        var frequency_val = $('#frequency-val').val();
+        if(budget_val == '40' && frequency_val == '3'){
+          $('#reach').html('3,000,000');
+          $('#roi').html('7.5%');
+          $('#engage').html('1.2');
+          $('#pta').html('43.0');
+          $('#impression').html('9,000,000');
+          $('#grp').html('75');
+          $('#cpm').html('$45');
+        }else if(budget_val == '20' && frequency_val == '3'){
+          // reach = '1,202,000' roi = '6.9%' engage = '1.2' pta = '21.39' impression = '4,360,000' grp = '50' avg_cpm = '$42'
+          $('#reach').html('1,202,000');
+          $('#roi').html('6.9%');
+          $('#engage').html('1.2');
+          $('#pta').html('21.39');
+          $('#impression').html('4,360,000');
+          $('#grp').html('50');
+          $('#cpm').html('$42');
+        }else if(budget_val == '80' && frequency_val == '3'){
+          // reach = '6,000,000' roi = '7.1%' engage = '1.2' pta = '85.68' impression = '6,000,000' grp = '70' avg_cpm = '$38'
+          $('#reach').html('6,000,000');
+          $('#roi').html('7.1%');
+          $('#engage').html('1.2');
+          $('#pta').html('85.68');
+          $('#impression').html('6,000,000');
+          $('#grp').html('70');
+          $('#cpm').html('$38');
+        }else if(budget_val == '80' && frequency_val == '5'){
+          // reach = '4,800,360' roi = '7.4%' engage = '1.2' pta = '85.92' impression = '8,070,030' grp = '65' avg_cpm = '$39'
+          $('#reach').html('4,800,360');
+          $('#roi').html('7.4%');
+          $('#engage').html('1.2');
+          $('#pta').html('85.92');
+          $('#impression').html('8,070,030');
+          $('#grp').html('65');
+          $('#cpm').html('$39');
+       }else{
+          $('#reach').html('');
+          $('#roi').html('');
+          $('#engage').html('');
+          $('#pta').html('');
+          $('#impression').html('');
+          $('#grp').html('');
+          $('#cpm').html('');
+        }
+      });
+
+      var onSelect = function(event, item) {
+          $('#search-bar').html('<a href="#" id="close-all"><img src="../_/img/nav-icons/close-btn.png" /></a>');
+      };
+
+      $('.done').click(function(){         
+         
+        if(menu_arr.age=='21-35' && menu_arr.archtype == 'Politico' && menu_arr.gender == 'Women' && menu_arr.personality == 'Intellectual')
+        {
+          $('.segment div h2:eq(0)').html('3,500,000');
+          $('.audience div h2:eq(0)').html('1.9%')
+          $('.row-1 div:first').removeClass().addClass('lnr-rech-box-gray').next().removeClass().addClass('lnr-rech-percent-box-gray');
+          $('.row-1 .db-pie-pic img').attr('src','../_/img/gray-color.png');
+          $('.row-1 div h2:eq(0)').html('3,275,000');
+          $('.row-1 div h2:eq(1)').html('65%');
+
+          $('.row-1 .add1 img').attr('src','../_/img/media-icon/msnbc.png');
+          $('.row-1 .add2 img').attr('src','../_/img/media-icon/hbo.png');
+          $('.row-2 .add1 img').attr('src','../_/img/media-icon/quadian.png');
+          $('.row-2 .add2 img').attr('src','../_/img/media-icon/the-economist.png');
+          $('.row-3 .add1 img').attr('src','../_/img/media-icon/twitter-icon.png');
+          $('.row-3 .add2 img').attr('src','../_/img/media-icon/quora.png');
+
+          $('.row-1 .add1 .db-descrip p:eq(0)').html('Reach : <br><span>918,750</span>');
+          $('.row-1 .add1 .db-descrip p:eq(1)').html('Engagements: <br><span>1.4</span>');
+          $('.row-1 .add2 .db-descrip p:eq(0)').html('Reach : <br><span>675,000</span>');
+          $('.row-1 .add2 .db-descrip p:eq(1)').html('Engagements: <br><span>1.3</span>');
+
+          $('.row-2 .add1 .db-descrip p:eq(0)').html('Reach : <br><span>350,800</span>');
+          $('.row-2 .add1 .db-descrip p:eq(1)').html('Engagements: <br><span>1.5</span>');
+          $('.row-2 .add2 .db-descrip p:eq(0)').html('Reach : <br><span>220,040</span>');
+          $('.row-2 .add2 .db-descrip p:eq(1)').html('Engagements: <br><span>1.1</span>');
+
+          $('.row-3 .add1 .db-descrip p:eq(0)').html('Reach : <br><span>889,700</span>');
+          $('.row-3 .add1 .db-descrip p:eq(1)').html('Engagements: <br><span>1.2</span>');
+          $('.row-3 .add2 .db-descrip p:eq(0)').html('Reach : <br><span>590,040</span>');
+          $('.row-3 .add2 .db-descrip p:eq(1)').html('Engagements: <br><span>1.2</span>');
+
+          $('.row-1 .lnr-rearch').html('<li><strong>MSNBC</strong></li><li><strong>HBO</strong></li><li>CNN</li><li>AMC</li><li>Other</li>');
+          $('.row-2 .lnr-rearch').html('<li><strong>Guardian</strong></li><li><strong>The Economist</strong></li><li>New York Times</li><li>Mother Jones</li><li>Other</li>');
+          $('.row-3 .lnr-rearch').html('<li><strong>Twitter</strong></li><li><strong>Quora</strong></li><li>Pinterest</li><li>YouTube</li><li>Other</li>');
+
+          $('.row-2 div:first').removeClass().addClass('lnr-rech-box-gray').next().removeClass().addClass('lnr-rech-percent-box-gray');
+          $('.row-2 .db-pie-pic img').attr('src','../_/img/gray-color.png');
+          $('.row-2 div h2:eq(0)').html('1,100,000');
+          $('.row-2 div h2:eq(1)').html('15%');
+          $('.row-3 div:first').removeClass().addClass('lnr-rech-box-gray').next().removeClass().addClass('lnr-rech-percent-box');
+          $('.row-3 .db-pie-pic img').attr('src','../_/img/gray-color.png');
+          $('.row-3 div h2:eq(0)').html('1,260,200');
+          $('.row-3 div h2:eq(1)').html('20%');
+          $('.nationl-heat-map img').attr('src','../_/img/scenario-three.jpg');
+        }
+        else if(menu_arr.age=='21-35' && menu_arr.archtype == 'Politico' && menu_arr.gender == 'Women')
+        {
+          $('.segment div h2:eq(0)').html('7,500,000');
+          $('.audience div h2:eq(0)').html('3%')
+          $('.row-1 div:first').removeClass().addClass('lnr-rech-box-gray').next().removeClass().addClass('lnr-rech-percent-box-gray');
+          $('.row-1 .db-pie-pic img').attr('src','../_/img/gray-color.png');
+          $('.row-1 div h2:eq(0)').html('4,875,000');
+          $('.row-1 div h2:eq(1)').html('65%');
+
+          $('.row-1 .add1 img').attr('src','../_/img/media-icon/db-logo.png');
+          $('.row-1 .add2 img').attr('src','../_/img/media-icon/amc.png');
+          $('.row-2 .add1 img').attr('src','../_/img/media-icon/ny-times.png');
+          $('.row-2 .add2 img').attr('src','../_/img/media-icon/h-logo.png');
+          $('.row-3 .add1 img').attr('src','../_/img/media-icon/twitter-icon.png');
+          $('.row-3 .add2 img').attr('src','../_/img/media-icon/fb-icon.png');
+
+          $('.row-1 .add1 .db-descrip p:eq(0)').html('Reach : <br><span>1,218,750</span>');
+          $('.row-1 .add1 .db-descrip p:eq(1)').html('Engagements: <br><span>1.2</span>');
+          $('.row-1 .add2 .db-descrip p:eq(0)').html('Reach : <br><span>975,000</span>');
+          $('.row-1 .add2 .db-descrip p:eq(1)').html('Engagements: <br><span>1.3</span>');
+
+          $('.row-2 .add1 .db-descrip p:eq(0)').html('Reach : <br><span>295,800</span>');
+          $('.row-2 .add1 .db-descrip p:eq(1)').html('Engagements: <br><span>1.2</span>');
+          $('.row-2 .add2 .db-descrip p:eq(0)').html('Reach : <br><span>270,040</span>');
+          $('.row-2 .add2 .db-descrip p:eq(1)').html('Engagements: <br><span>1.1</span>');
+
+          $('.row-3 .add1 .db-descrip p:eq(0)').html('Reach : <br><span>689,540</span>');
+          $('.row-3 .add1 .db-descrip p:eq(1)').html('Engagements: <br><span>1.2</span>');
+          $('.row-3 .add2 .db-descrip p:eq(0)').html('Reach : <br><span>590,040</span>');
+          $('.row-3 .add2 .db-descrip p:eq(1)').html('Engagements: <br><span>1.5</span>');
+
+          $('.row-1 .lnr-rearch').html('<li><strong>CNN</strong></li><li><strong>AMC</strong></li><li>TNT</li><li>CBS</li><li>Other</li>');
+          $('.row-2 .lnr-rearch').html('<li><strong>New York Times</strong></li><li><strong>Huffington Post</strong></li><li>Slate</li><li>Reuters</li><li>Other</li>');
+          $('.row-3 .lnr-rearch').html('<li><strong>Twitter</strong></li><li><strong>Facebook</strong></li><li>Pinterest</li><li>YouTube</li><li>Other</li>');
+
+          $('.row-2 div:first').removeClass().addClass('lnr-rech-box-gray').next().removeClass().addClass('lnr-rech-percent-box-gray');
+          $('.row-2 .db-pie-pic img').attr('src','../_/img/gray-color.png');
+          $('.row-2 div h2:eq(0)').html('1,500,000');
+          $('.row-2 div h2:eq(1)').html('15%');
+          $('.row-3 div:first').removeClass().addClass('lnr-rech-box-gray').next().removeClass().addClass('lnr-rech-percent-box-gray');
+          $('.row-3 .db-pie-pic img').attr('src','../_/img/gray-color.png');
+          $('.row-3 div h2:eq(0)').html('1,112,500');
+          $('.row-3 div h2:eq(1)').html('25%');
+          $('.nationl-heat-map img').attr('src','../_/img/scenario-two.jpg');
+        }
+        else if(menu_arr.age=='21-35' && menu_arr.archtype == 'Politico')
+        {
+          $('.segment div h2:eq(0)').html('15,000,000');
+          $('.audience div h2:eq(0)').html('5%')
+          $('.row-1 div:first').removeClass().addClass('lnr-rech-box-gray').next().removeClass().addClass('lnr-rech-percent-box-gray');
+          $('.row-1 .db-pie-pic img').attr('src','../_/img/gray-color.png');
+          $('.row-1 div h2:eq(0)').html('9,000,000');
+          $('.row-1 div h2:eq(1)').html('60%');
+          $('.row-1 .add1 img').attr('src','../_/img/media-icon/nbc-logo.png');
+          $('.row-1 .add2 img').attr('src','../_/img/media-icon/abc-logo.png');
+          $('.row-2 .add1 img').attr('src','../_/img/media-icon/ny-times.png');
+          $('.row-2 .add2 img').attr('src','../_/img/media-icon/the-atlantic.png');
+          $('.row-3 .add1 img').attr('src','../_/img/media-icon/twitter-icon.png');
+          $('.row-3 .add2 img').attr('src','../_/img/media-icon/linked-in.png');
+
+          $('.row-1 .add1 .db-descrip p:eq(0)').html('Reach : <br><span>1,618,750</span>');
+          $('.row-1 .add1 .db-descrip p:eq(1)').html('Engagements: <br><span>1.2</span>');
+          $('.row-1 .add2 .db-descrip p:eq(0)').html('Reach : <br><span>1,175,000</span>');
+          $('.row-1 .add2 .db-descrip p:eq(1)').html('Engagements: <br><span>0.9</span>');
+
+          $('.row-2 .add1 .db-descrip p:eq(0)').html('Reach : <br><span>565,800</span>');
+          $('.row-2 .add1 .db-descrip p:eq(1)').html('Engagements: <br><span>1.2</span>');
+          $('.row-2 .add2 .db-descrip p:eq(0)').html('Reach : <br><span>480,040</span>');
+          $('.row-2 .add2 .db-descrip p:eq(1)').html('Engagements: <br><span>.85</span>');
+
+          $('.row-3 .add1 .db-descrip p:eq(0)').html('Reach : <br><span>1,289,540</span>');
+          $('.row-3 .add1 .db-descrip p:eq(1)').html('Engagements: <br><span>1.2</span>');
+          $('.row-3 .add2 .db-descrip p:eq(0)').html('Reach : <br><span>990,040</span>');
+          $('.row-3 .add2 .db-descrip p:eq(1)').html('Engagements: <br><span>1.4</span>');
+
+          $('.row-1 .lnr-rearch').html('<li><strong>NBC</strong></li><li><strong>ABC</strong></li><li>CNN</li><li>AMC</li><li>Other</li>');
+          $('.row-2 .lnr-rearch').html('<li><strong>New York Times</strong></li><li><strong>The Atlantic</strong></li><li>Politico.com</li><li>Reuters</li><li>Other</li>');
+          $('.row-3 .lnr-rearch').html('<li><strong>Twitter</strong></li><li><strong>LinkedIn</strong></li><li>Facebook</li><li>YouTube</li><li>Other</li>');
+
+          $('.row-2 div:first').removeClass().addClass('lnr-rech-box-gray').next().removeClass().addClass('lnr-rech-percent-box-gray');
+          $('.row-2 .db-pie-pic img').attr('src','../_/img/gray-color.png');
+          $('.row-2 div h2:eq(0)').html('2,250,000');
+          $('.row-2 div h2:eq(1)').html('15%');
+          $('.row-3 div:first').removeClass().addClass('lnr-rech-box-gray').next().removeClass().addClass('lnr-rech-percent-box-gray');
+          $('.row-3 .db-pie-pic img').attr('src','../_/img/gray-color.png');
+          $('.row-3 div h2:eq(0)').html('3,750,000');
+          $('.row-3 div h2:eq(1)').html('25%');
+          $('.nationl-heat-map img').attr('src','../_/img/scenario-one.jpg');
+        }
+
+    });
+    function filters(opt){
+    $('#search-bar').html('<a href="#" id="close-all"><img src="../_/img/nav-icons/close-btn.png" /></a>');
+    $.each( opt, function( key, value ) {
+    if(value != ''){
+    $('#search-bar').append('<a href="#" class="categry-filtr item " id="'+key+'"> '+value+' <span><img height="28" width="28" src="../_/img/nav-icons/filtr-close-img.png"></span></a>');
+    }
+    });
+    }
+    $('body').on('click','.item',function(){
+    var rm = $(this).text();
+    console.log(rm);
+    var id = $(this).attr('id');
+    menu_arr[id] = '';
+    $(this).remove();
+    $('.done').click();
+    });
+    $('body').on('click','#close-all',function(){
+    menu_arr = {};
+    location.reload();
+    $('#search-bar').html('<a href="#" id="close-all"><img src="../_/img/nav-icons/close-btn.png" /></a>');
+    });
+    var menu_arr = {};
+    $('.age li').click(function(){
+    menu_arr['age'] = $.trim($(this).text());
+    console.log(menu_arr);
+    filters(menu_arr);
+    });
+    $('.gender li').click(function(){
+    menu_arr['gender'] = $.trim($(this).text());
+    console.log(menu_arr);
+    filters(menu_arr);
+    });
+    $('.archtype li').click(function(){
+    menu_arr['archtype'] = $.trim($(this).text());
+    console.log(menu_arr);
+    filters(menu_arr);
+    });
+    $('.personality li').click(function(){
+    menu_arr['personality'] = $.trim($(this).text());
+    console.log(menu_arr);
+    filters(menu_arr);
+    });
+    /*  jQuery activation and setting options. Visit docs.zozoui.com/tabs for
+    complete documentation, option list, public methods, callback events.*/
+    $("#tabbed-nav").zozoTabs({
+    theme: "silver",
+    orientation: "horizontal",
+    position: "top-center",
+    size: "medium",
+    animation: {
+    easing: "easeInOutExpo",
+    duration: 400,
+    effects: "slideV"
+    },
+    defaultTab: "tab1",
+    select: onSelect
+    });
+  $(".nested-tabs").zozoTabs({
+                position: "top-left",
+                theme: "blue",
+                style: "underlined",
+                rounded: false,
+                shadows: false,
+                defaultTab: "tab1",
+                animation: {
+                    easing: "easeInOutCirc",
+                    effects: "slideV",
+                    duration: 350
+                },
+                size: "medium"
+            });
+    $(function(){
+    $(".dropdown").hover(
+    function() {
+    $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+    $(this).toggleClass('open');
+    $('b', this).toggleClass("caret caret-up");
+    },
+    function() {
+    $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+    $(this).toggleClass('open');
+    $('b', this).toggleClass("caret caret-up");
+    });
+    });
+    });
+    </script>
+    </head>
+    <body>
+<div class="container-fluid">
+      <div class="row">
+    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 sidebar">
+          <div class="logo text-center"> <img src="../_/img/nav-icons/com-logo.png" /> </div>
+          <ul class="side-nav">
+        <li><a href="#" data-toggle="collapse" data-target="#inner-nav" > <img src="../_/img/nav-icons/demo-graphics.png" /><br />
+          Demographics</a>
+              <ul id="inner-nav" class="collapse" >
+            <li class="dropdown"> <a href="#" data-toggle="dropdown" data-target="#inner-nav-3" aria-haspopup="true" aria-expanded="true"> Age</a>
+                  <ul id="inner-nav-3" class="dropdown-menu inner-nav-2 age pull-right" aria-labelledby="inner-nav-3">
+                <div class="inner-close done">Done<span class="pull-right"><img src="../_/img/nav-icons/done-btn.png" /></span></div>
+                <li> <a href="#"> 12-20 <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li> <a href="#"> 21-35 <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+                <li> <a href="#"> 35-54 <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+                <li> <a href="#"> 54+ <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+              </ul>
+                  <div class="clearfix"></div>
+                </li>
+            <li class="dropdown"> <a href="#" data-toggle="dropdown" data-target="#inner-nav-2" aria-haspopup="true" aria-expanded="true"> Gender</a>
+                  <ul id="inner-nav-2" class="dropdown-menu inner-nav-2 gender pull-right">
+                <div class="inner-close done">Done<span class="pull-right"><img src="../_/img/nav-icons/done-btn.png" /></span></div>
+                <li> <a href="#"> Men <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li> <a href="#"> Women <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+              </ul>
+                </li>
+            <li class="dropdown"> <a href="#" data-toggle="dropdown" data-target="#income" aria-haspopup="true" aria-expanded="true"> Income</a>
+                  <ul id="income" class="dropdown-menu inner-nav-2 income pull-right">
+                <div class="inner-close done">Done<span class="pull-right"><img src="../_/img/nav-icons/done-btn.png" /></span></div>
+                <li> <a href="#"> $25k and Under <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li> <a href="#"> $25k to $75k <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+                <li> <a href="#"> $75k and Over <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+              </ul>
+                </li>
+          </ul>
+            </li>
+        <li class="dropdown"><a href="#" data-toggle="dropdown" data-target="#brand" aria-haspopup="true" aria-expanded="true"> <img src="../_/img/nav-icons/brand-affinity.png" /><br />
+          Brand Affinity</a>
+              <ul id="brand" class="dropdown-menu inner-nav-2 brand-affinnity pull-right">
+            <div class="inner-close done">Done<span class="pull-right"><img src="../_/img/nav-icons/done-btn.png" /></span></div>
+            <li><a href="#">Ben & Jerry <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+            <li> <a href="#"> Chobani <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+            <li> <a href="#">Delta <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span> </a> </li>
+            <li> <a href="#">Doritos <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span> </a> </li>
+            <li> <a href="#">Lkea <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+            <li> <a href="#">Nike <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+            <li> <a href="#">Pepsi <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span> </a> </li>
+            <li> <a href="#">Samsung <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span> </a> </li>
+            <li> <a href="#">Starbucks <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span> </a> </li>
+            <li> <a href="#">Tide <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span> </a> </li>
+          </ul>
+              <div class="clearfix"></div>
+            </li>
+        <li><a href="#" data-toggle="collapse" data-target="#life-style-nav"> <img src="../_/img/nav-icons/life-style.png" /><br />
+          Lifestyle</a>
+              <ul id="life-style-nav" class="collapse inner-nav hide">
+            <li class="dropdown"> <a href="#" data-toggle="dropdown" data-target="#lifestage" aria-haspopup="true" aria-expanded="true"> Lifestage </a>
+                  <ul id="lifestage" class="dropdown-menu inner-nav-2 lifestage pull-right">
+                <div class="inner-close done">Done<span class="pull-right"><img src="../_/img/nav-icons/done-btn.png" /></span></div>
+                <li> <a href="#"> Retired <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li> <a href="#"> Student <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+                <li> <a href="#"> Parent <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+                <li> <a href="#"> Married <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+              </ul>
+                  <div class="clearfix"></div>
+                </li>
+            <li class="dropdown"> <a href="#" data-toggle="dropdown" data-target="#consumption" aria-haspopup="true" aria-expanded="true"> Consumption Preference</a>
+                  <ul id="consumption" class="dropdown-menu inner-nav-2 consumption pull-right">
+                <div class="inner-close done">Done<span class="pull-right"><img src="../_/img/nav-icons/done-btn.png" /></span></div>
+                <li><a href="#">Impulsive <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li><a href="#">Discount <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li><a href="#">Conscientious <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li><a href="#">Loyal <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+              </ul>
+                </li>
+            <li class="dropdown"> <a href="#" data-toggle="dropdown" data-target="#archtype" aria-haspopup="true" aria-expanded="true">Archetypes</a>
+              <ul id="archtype" class="dropdown-menu inner-nav-2 archtype pull-right">
+                <div class="inner-close done">Done<span class="pull-right"><img src="../_/img/nav-icons/done-btn.png" /></span></div>
+                <li><a href="#">Clean and Green <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li><a href="#">Socialite <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li><a href="#">Gadget Guru <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li><a href="#">Traditional <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li><a href="#">Digital Native <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li><a href="#">Politico <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+              </ul>
+                </li>
+            <li> <a href="#">Profession</a> </li>
+          </ul>
+            </li>
+        <li class="dropdown"><a href="#"> <img src="../_/img/nav-icons/personality.png"><br>
+          Personality</a>
+              <ul id="brand" class="dropdown-menu inner-nav-2 personality pull-right">
+            <div class="inner-close done">Done<span class="pull-right"><img src="../_/img/nav-icons/done-btn.png" /></span></div>
+            <li><a href="#">Extrovert <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+            <li><a href="#">Melancholic <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+            <li><a href="#">Reflective <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+            <li><a href="#">Relational <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+            <li><a href="#">Thrill-Seeker <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+            <li><a href="#">Forward Thinking <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+            <li><a href="#">Intellectual <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+          </ul>
+            </li>
+      </ul>
+          <ul class="bottom-ul">
+        <li><a href="#"> <img src="../_/img/profile-brandy.png" class="profile-pic img-circle" /><br />
+          Hi, Brandy!</a></li>
+        <li><a href="#"> <img src="../_/img/nav-icons/settings.png" /><br />
+          Settings</a></li>
+      </ul>
+        </div>
+    <div class="col-lg-11 col-md-10 col-sm-9 col-xs-9 pull-right"> 
+          <!-- Header -->
+          <div class="row header">
+        <div class="col-lg-7 col-md-6 col-sm-6 col-xs-5 top-left-filter" id="search-bar"> <a id="close-all" href="#"><img src="../_/img/nav-icons/close-btn.png" /></a> <!-- <a class="categry-filtr" href="#"> 21 - 35 <span><img src="_/img/nav-icons/filtr-close-img.png" width="28" height="28" /></span></a> <a class="categry-filtr" href="#"> Women <span><img src="_/img/nav-icons/filtr-close-img.png" width="28" height="28" /></span></a> <a class="categry-filtr" href="#"> Coffee Drinker <span><img src="_/img/nav-icons/filtr-close-img.png" width="28" height="28" /></span></a> --> </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-right top-save-button">
+              <p class="button"><a href="#" class="link">Save</a></p>
+            </div>
+        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4 pull-right segment-link"> <a href="javascript:;">Saved Segments <img src="../_/img/nav-icons/saved-segments.png" /></a> </div>
+      </div>
+          <!-- Tabs -->
+          
+          <div id="tabbed-nav"> 
+        <!-- Tab Navigation Menu -->
+        <ul>
+              <li><a>Dashboard</a></li>
+              <li><a>Explorer</a></li>
+              <li><a>Media Plan</a></li>
+            </ul>
+        <!-- Content container -->
+        <div> 
+              
+              <!-- Overview start -->
+              <div>
+            <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 db-buy-lft pad-lg segment">
+                <div>
+                      <p class="sm-title">Total Segment Reach</p>
+                      <h2 class="value-text" ></h2>
+                    </div>
+              </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 db-buy-lft pad-lg audience">
+                <div>
+                      <p class="sm-title">% Of Moviegoing Audience</p>
+                      <h2 class="value-text" ></h2>
+                    </div>
+              </div>
+                </div>
+            <div class="row pad-lg">
+                  <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 text-center"> <img src="../_/img/explore-buyer/explorer-single/liner-circle.png" class="img-responsive" /> </div>
+                  <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 row-1">
+                <div class="lnr-rech-box-gray">
+                      <p >Linear Reach</p>
+                      <h2 ></h2>
+                    </div>
+                <div class="lnr-rech-percent-box-gray">
+                      <p >Linear Reach Percentage</p>
+                      <h2></h2>
+                    </div>
+                <div class="db-pie-pic">
+                      <figure class="pic-chart"><img src="../_/img/spacer.png" class="img-responsive" /></figure>
+                      <ol class="lnr-rearch">
+                    <!-- <li><strong>CNN</strong></li>
+          <li><strong>HBO</strong></li>
+          <li>AMC</li>
+          <li>NBC</li>
+          <li>Other</li> -->
+                  </ol>
+                    </div>
+                <div class="db-descrip-contain add1"> <img class="pull-left" width="50" src="../_/img/media-icon/dummy-logo.png" />
+                      <div class="db-descrip">
+                    <p class="head">Reach <br />
+                          <span></span></p>
+                    <p class="head">Engagement<br />
+                          <span></span></p>
+                  </div>
+                      <div class="clearfix"></div>
+                    </div>
+                <div class="db-descrip-contain add2"> <img class="pull-left" width="50" src="../_/img/media-icon/dummy-logo.png" />
+                      <div class="db-descrip">
+                    <p class="head">Reach <br />
+                          <span></span></p>
+                    <p class="head">Engagement<br />
+                          <span></span></p>
+                  </div>
+                      <div class="clearfix"></div>
+                    </div>
+              </div>
+                </div>
+            <hr />
+            <div class="row pad-lg">
+                  <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 text-center"> <img src="../_/img/explore-buyer/explorer-single/digital-circle.png" class="img-responsive" /> </div>
+                  <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 row-2">
+                <div class="lnr-rech-box-gray">
+                      <p >Digital Reach</p>
+                      <h2 ></h2>
+                    </div>
+                <div class="lnr-rech-percent-box-gray">
+                      <p>Digital Reach Percentage</p>
+                      <h2 ></h2>
+                    </div>
+                <div class="db-pie-pic">
+                      <figure class="pic-chart"><img src="../_/img/spacer.png" class="img-responsive" /></figure>
+                      <ol class="lnr-rearch">
+                    <!-- <li><strong>New York Times</strong></li>
+        <li><strong>Huffington Post</strong></li>
+        <li>State</li>
+        <li>Reuters</li>
+        <li>Other</li> -->
+                  </ol>
+                    </div>
+                <div class="db-descrip-contain add1"> <img class="pull-left" width="50" src="../_/img/media-icon/dummy-logo.png" />
+                      <div class="db-descrip">
+                    <p class="head">Reach <br />
+                          <span></span></p>
+                    <p class="head">Engagement<br />
+                          <span></span></p>
+                  </div>
+                      <div class="clearfix"></div>
+                    </div>
+                <div class="db-descrip-contain add2"> <img class="pull-left" width="50" src="../_/img/media-icon/dummy-logo.png" />
+                      <div class="db-descrip">
+                    <p class="head">Reach <br />
+                          <span></span></p>
+                    <p class="head">Engagement<br />
+                          <span></span></p>
+                  </div>
+                      <div class="clearfix"></div>
+                    </div>
+              </div>
+                </div>
+            <hr />
+            <div class="row pad-lg">
+                  <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 text-center"> <img src="../_/img/explore-buyer/explorer-single/social-circle.png" class="img-responsive" /> </div>
+                  <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 row-3">
+                <div class="lnr-rech-box-gray">
+                      <p >Social Reach</p>
+                      <h2 ></h2>
+                    </div>
+                <div class="lnr-rech-percent-box-gray">
+                      <p >Social Reach Percentage</p>
+                      <h2></h2>
+                    </div>
+                <div class="db-pie-pic">
+                      <figure class="pic-chart"><img src="../_/img/spacer.png" class="img-responsive" /></figure>
+                      <ol class="lnr-rearch">
+                    <!-- <li>Twitter</li>
+      <li>Facebook</li>
+      <li>Pinterest</li>
+      <li>Youtube</li>
+      <li>Other</li> -->
+                  </ol>
+                    </div>
+                <div class="db-descrip-contain add1"> <img class="pull-left" width="50" src="../_/img/media-icon/dummy-logo.png" />
+                      <div class="db-descrip">
+                    <p class="head">Reach <br />
+                          <span></span></p>
+                    <p class="head">Engagement<br />
+                          <span></span></p>
+                  </div>
+                      <div class="clearfix"></div>
+                    </div>
+                <div class="db-descrip-contain add2"> <img class="pull-left" width="50" src="../_/img/media-icon/dummy-logo.png" />
+                      <div class="db-descrip">
+                    <p class="head">Reach <br />
+                          <span></span></p>
+                    <p class="head">Engagement<br />
+                          <span></span></p>
+                  </div>
+                      <div class="clearfix"></div>
+                    </div>
+              </div>
+                </div>
+            <hr />
+            <div class="clearfix"></div>
+            <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nationl-heat-map text-center"> <img class="img-responsive" src="../_/img/spacer.png" /> </div>
+                </div>
+          </div>
+              <!-- Overview start --> 
+              <!-- Features -->
+              <div>
+            <div class="row explorer-block">
+                  <div class="clearfix"></div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 top-show">
+                <div> <a href="explorer-buy.html"><img src="../_/img/explore-buyer/action.png" class="img-responsive" /><br />
+                  <span>Action</span></a> </div>
+              </div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 top-show">
+                <div> <a href="#"><img src="../_/img/explore-buyer/horror.png" class="img-responsive" /><br />
+                  <span>Horror</span></a> </div>
+              </div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 top-show">
+                <div> <a href="#"><img src="../_/img/explore-buyer/sci-fi.png" class="img-responsive" /><br />
+                  <span>Sci-fi</span></a></div>
+              </div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 top-show">
+                <div><a href="#"> <img src="../_/img/explore-buyer/drama.png" class="img-responsive" /><br />
+                  <span>Drama</span></a></div>
+              </div>
+                  <div class="clearfix"></div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 top-show">
+                <div> <a href="explorer.html"><img src="../_/img/explore-buyer/animated.png" class="img-responsive" /><br />
+                  <span>Animated</span></a> </div>
+              </div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 top-show">
+                <div><a href="#"> <img src="../_/img/explore-buyer/romance.png" class="img-responsive" /><br />
+                  <span>Romance</span></a> </div>
+              </div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 top-show">
+                <div> <a href="#"><img src="../_/img/explore-buyer/comedy.png" class="img-responsive" /><br />
+                  <span>Comedy</span></a></div>
+              </div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 top-show">
+                <div> <a href="#"> <img src="../_/img/explore-buyer/adventure.png" class="img-responsive" /><br />
+                  <span>Adventure</span></a></div>
+              </div>
+                  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 top-show">
+                <div> <a href="#"> <img src="../_/img/explore-buyer/western.png" class="img-responsive" /><br />
+                  <span>Western</span></a></div>
+              </div>
+                </div>
+          </div>
+              
+              <!-- Media Plan -->
+              <div>
+            <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 pad-lg ">
+                <p class="sm-title"> Budget :</p>
+                <p><select id="budget-val" class="form-control input-lg custom-select media-plan" style="width:50%; display:inline-block;">
+                <option value=""></option>
+                <option value="20">$20 Million</option>
+                <option value="40">$40 Million</option>
+                <option value="80">$80 Million</option>
+                </select> <!-- <span class="value-text-1 ">$40</span> Million </p> -->
+                <p class="sm-title"> Frequency :</p>
+                <p> 
+                <select id="frequency-val" class="form-control input-lg custom-select media-plan" style="width:50%; display:inline-block;">
+                <option value=""></option>
+                <option value="3">3 views per person</option>
+                <option value="4">4 views per person</option>
+                <option value="5">5 views per person</option>
+                </select> <!-- <span class="value-text-1 ">3</span> Views per person </p> -->
+                <div class="clearfix"></div>
+                <p class="sm-title mar-tp"> Timeframe : </p>
+                <div class="timefrme"> <img src="../_/img/media/calender-img.jpg" /> <span class="media-pln-explr">Sept.01, 2015</span> to <img src="../_/img/media/calender-img.jpg" /> <span class="media-pln-explr">Nov.01, 2015</span> </div>
+              </div>
+                  <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 pad-sm buy-mdpln-camp-otcme">
+                <p>Campaign Outcomes :</p>
+                <p class="camp-inn-title">Reach <br/>
+                      <span id="reach"></span></p>
+                      <p class="camp-inn-title">Return on Investment <br />
+                      <span id="roi"></span></p><div class="clearfix"></div>
+                <p class="camp-inn-title">Engagement <br />
+                      <span id="engage"></span></p>
+                      <p class="camp-inn-title">Projected PTA <br />
+                      <span id="pta"></span></p>
+                      <div class="clearfix"></div>
+                <p class="camp-inn-bottom">Impressions <br />
+                      <span id="impression"></span></p>
+                <p class="camp-inn-bottom">GRP<br />
+                      <span id="grp"></span></p>
+                <p class="camp-inn-bottom">Average CPM <br />
+                      <span id="cpm"></span></p>
+              </div>
+                </div>
+            <div class="clearfix"></div>
+            <div class="row seprator">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ur-schedule"> 
+                
+                <!-- Inner Tab -->
+                
+                <div class="nested-tabs">
+                      <ul>
+                    <li><a>
+                      <div class="linear-tab-blck">
+                        <figure class="pull-left"><img src="../_/img/explore-buyer/explorer-single/liner-circle.png" /></figure>
+                        <p> <span class="bg-font">50%</span><br />
+                          Reach<br />
+                          <span class="lt-font">1,500,000</span> </p>
+                        <div class="clearfix"></div>
+                      </div>
+                      </a></li>
+                    <li><a>
+                      <div class="linear-tab-blck">
+                        <figure class="pull-left"><img src="../_/img/explore-buyer/explorer-single/digital-circle.png" /></figure>
+                        <p> <span class="bg-font">20%</span><br />
+                          Reach<br />
+                          <span class="lt-font">600,000</span> </p>
+                        <div class="clearfix"></div>
+                      </div>
+                      </a></li>
+                    <li><a>
+                      <div class="linear-tab-blck">
+                        <figure class="pull-left"><img src="../_/img/explore-buyer/explorer-single/social-circle.png" /></figure>
+                        <p> <span class="bg-font">20%</span><br />
+                          Reach<br />
+                          <span class="lt-font">600,000</span> </p>
+                        <div class="clearfix"></div>
+                      </div>
+                      </a></li>
+                    <li><a>
+                      <div class="linear-tab-blck">
+                        <figure class="pull-left"><img src="../_/img/explore-buyer/explorer-single/regional-circle.png" /></figure>
+                        <p> <span class="bg-font">10%</span><br />
+                          Reach<br />
+                          <span class="lt-font">300,000</span> </p>
+                        <div class="clearfix"></div>
+                      </div>
+                      </a></li>
+                  </ul>
+                      <div>
+                    <div class="linear-tb-img pad-custom"> <img src="../_/img/explore-buyer/explorer-single/media-plan-tble.png" /> </div>
+                    <div class="linear-tb-img pad-custom"> <img src="../_/img/explore-buyer/explorer-single/tab-two-img.png" /> </div>
+                    <div class="linear-tb-img pad-custom"> <img class="img-responsive" src="../_/img/social.png" /> </div>
+                    <div class="linear-tb-img pad-custom">
+                    <div class="popupdiv"></div>                    
+                     <img class="img-responsive" src="../_/img/regional.png" /> </div>
+                  </div>
+                    </div>
+              </div>
+                </div>
+          </div>
+            </div>
+      </div>
+        </div>
+    <div class="clearfix"></div>
+  </div>
+    </div>
+<div class="modal fade" id="what" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+          <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">What if Analysis</h4>
+      </div>
+          <div class="modal-body">
+        <table cellpadding="0" cellspacing="0" border="0" class="table table-bordered table-striped">
+              <thead>
+            <tr>
+                  <th>Network</th>
+                  <th>Total Reach</th>
+                  <th>Age Group</th>
+                  <th>Gender</th>
+                  <th>Coffee Drinker</th>
+                  <th>Segment</th>
+                  <th>Target Efficiency</th>
+                </tr>
+          </thead>
+              <tbody>
+            <tr>
+                  <td><img src="../_/img/what/fox.png" /></td>
+                  <td>120</td>
+                  <td>60</td>
+                  <td>50</td>
+                  <td>20</td>
+                  <td>15</td>
+                  <td>12.5%</td>
+                </tr>
+            <tr>
+                  <td><img src="../_/img/what/axn.png" /></td>
+                  <td>70</td>
+                  <td>20</td>
+                  <td>30</td>
+                  <td>10</td>
+                  <td>5</td>
+                  <td>7%</td>
+                </tr>
+            <tr>
+                  <td><img src="../_/img/what/turner.png" /></td>
+                  <td>90</td>
+                  <td>80</td>
+                  <td>45</td>
+                  <td>27</td>
+                  <td>20</td>
+                  <td>22%</td>
+                </tr>
+          </tbody>
+            </table>
+      </div>
+        </div>
+  </div>
+    </div>
+</body>
+</html>

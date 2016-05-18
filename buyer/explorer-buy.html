@@ -1,0 +1,461 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>dRishti</title>
+    <link rel="stylesheet" type="text/css" href="../_/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../_/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../_/css/zozo-tab.css"/>
+    <link rel="stylesheet" type="text/css" href="../_/css/zozo.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../_/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_/js/zozo.js"></script>
+    <script>
+    $(document).ready(function () {
+
+
+
+var onSelect = function(event, item) {
+    $('#search-bar').html('<a href="#" id="close-all"><img src="../_/img/nav-icons/close-btn.png" /></a>');
+};
+
+    $('.done').click(function(){         
+         
+        if(menu_arr.age=='21-35' && menu_arr.archtype == 'Political' && menu_arr.gender == 'Women' && menu_arr.personality == 'Intellectual')
+        {
+          $('.segment div h2:eq(0)').html('3,500,000');
+          $('.audience div h2:eq(0)').html('1.9%')
+          $('.row-1 div:first').removeClass().addClass('lnr-rech-box-gray').next().removeClass().addClass('lnr-rech-percent-box-gray');
+          $('.row-1 .db-pie-pic img').attr('src','../_/img/gray-color.png');
+          $('.row-1 div h2:eq(0)').html('3,275,000');
+          $('.row-1 div h2:eq(1)').html('65%');
+
+          $('.row-1 .add1 img').attr('src','../_/img/media-icon/msnbc.png');
+          $('.row-1 .add2 img').attr('src','../_/img/media-icon/hbo.png');
+          $('.row-2 .add1 img').attr('src','../_/img/media-icon/quadian.png');
+          $('.row-2 .add2 img').attr('src','../_/img/media-icon/the-economist.png');
+          $('.row-3 .add1 img').attr('src','../_/img/media-icon/twitter-icon.png');
+          $('.row-3 .add2 img').attr('src','../_/img/media-icon/quora.png');
+
+          $('.row-1 .add1 .db-descrip p:eq(0)').html('Reach : <br><span>918,750</span>');
+          $('.row-1 .add1 .db-descrip p:eq(1)').html('Engagements: <br><span>1.4</span>');
+          $('.row-1 .add2 .db-descrip p:eq(0)').html('Reach : <br><span>675,000</span>');
+          $('.row-1 .add2 .db-descrip p:eq(1)').html('Engagements: <br><span>1.3</span>');
+
+          $('.row-2 .add1 .db-descrip p:eq(0)').html('Reach : <br><span>350,800</span>');
+          $('.row-2 .add1 .db-descrip p:eq(1)').html('Engagements: <br><span>1.5</span>');
+          $('.row-2 .add2 .db-descrip p:eq(0)').html('Reach : <br><span>220,040</span>');
+          $('.row-2 .add2 .db-descrip p:eq(1)').html('Engagements: <br><span>1.1</span>');
+
+          $('.row-3 .add1 .db-descrip p:eq(0)').html('Reach : <br><span>889,700</span>');
+          $('.row-3 .add1 .db-descrip p:eq(1)').html('Engagements: <br><span>1.2</span>');
+          $('.row-3 .add2 .db-descrip p:eq(0)').html('Reach : <br><span>590,040</span>');
+          $('.row-3 .add2 .db-descrip p:eq(1)').html('Engagements: <br><span>1.2</span>');
+
+          $('.row-1 .lnr-rearch').html('<li><strong>MSNBC</strong></li><li><strong>HBO</strong></li><li>CNN</li><li>AMC</li><li>Other</li>');
+          $('.row-2 .lnr-rearch').html('<li><strong>Guardian</strong></li><li><strong>The Economist</strong></li><li>New York Times</li><li>Mother Jones</li><li>Other</li>');
+          $('.row-3 .lnr-rearch').html('<li><strong>Twitter</strong></li><li><strong>Quora</strong></li><li>Pinterest</li><li>YouTube</li><li>Other</li>');
+
+          $('.row-2 div:first').removeClass().addClass('lnr-rech-box-gray').next().removeClass().addClass('lnr-rech-percent-box-gray');
+          $('.row-2 .db-pie-pic img').attr('src','../_/img/gray-color.png');
+          $('.row-2 div h2:eq(0)').html('1,100,000');
+          $('.row-2 div h2:eq(1)').html('15%');
+          $('.row-3 div:first').removeClass().addClass('lnr-rech-box-gray').next().removeClass().addClass('lnr-rech-percent-box');
+          $('.row-3 .db-pie-pic img').attr('src','../_/img/gray-color.png');
+          $('.row-3 div h2:eq(0)').html('1,260,200');
+          $('.row-3 div h2:eq(1)').html('20%');
+          $('.nationl-heat-map img').attr('src','../_/img/scenario-three.jpg');
+        }
+        else if(menu_arr.age=='21-35' && menu_arr.archtype == 'Political' && menu_arr.gender == 'Women')
+        {
+          $('.segment div h2:eq(0)').html('7,500,000');
+          $('.audience div h2:eq(0)').html('3%')
+          $('.row-1 div:first').removeClass().addClass('lnr-rech-box-gray').next().removeClass().addClass('lnr-rech-percent-box-gray');
+          $('.row-1 .db-pie-pic img').attr('src','../_/img/gray-color.png');
+          $('.row-1 div h2:eq(0)').html('4,875,000');
+          $('.row-1 div h2:eq(1)').html('65%');
+
+          $('.row-1 .add1 img').attr('src','../_/img/media-icon/db-logo.png');
+          $('.row-1 .add2 img').attr('src','../_/img/media-icon/amc.png');
+          $('.row-2 .add1 img').attr('src','../_/img/media-icon/ny-times.png');
+          $('.row-2 .add2 img').attr('src','../_/img/media-icon/h-logo.png');
+          $('.row-3 .add1 img').attr('src','../_/img/media-icon/twitter-icon.png');
+          $('.row-3 .add2 img').attr('src','../_/img/media-icon/fb-icon.png');
+
+          $('.row-1 .add1 .db-descrip p:eq(0)').html('Reach : <br><span>1,218,750</span>');
+          $('.row-1 .add1 .db-descrip p:eq(1)').html('Engagements: <br><span>1.2</span>');
+          $('.row-1 .add2 .db-descrip p:eq(0)').html('Reach : <br><span>975,000</span>');
+          $('.row-1 .add2 .db-descrip p:eq(1)').html('Engagements: <br><span>1.3</span>');
+
+          $('.row-2 .add1 .db-descrip p:eq(0)').html('Reach : <br><span>295,800</span>');
+          $('.row-2 .add1 .db-descrip p:eq(1)').html('Engagements: <br><span>1.2</span>');
+          $('.row-2 .add2 .db-descrip p:eq(0)').html('Reach : <br><span>270,040</span>');
+          $('.row-2 .add2 .db-descrip p:eq(1)').html('Engagements: <br><span>1.1</span>');
+
+          $('.row-3 .add1 .db-descrip p:eq(0)').html('Reach : <br><span>689,540</span>');
+          $('.row-3 .add1 .db-descrip p:eq(1)').html('Engagements: <br><span>1.2</span>');
+          $('.row-3 .add2 .db-descrip p:eq(0)').html('Reach : <br><span>590,040</span>');
+          $('.row-3 .add2 .db-descrip p:eq(1)').html('Engagements: <br><span>1.5</span>');
+
+          $('.row-1 .lnr-rearch').html('<li><strong>CNN</strong></li><li><strong>AMC</strong></li><li>TNT</li><li>CBS</li><li>Other</li>');
+          $('.row-2 .lnr-rearch').html('<li><strong>New York Times</strong></li><li><strong>Huffington Post</strong></li><li>Slate</li><li>Reuters</li><li>Other</li>');
+          $('.row-3 .lnr-rearch').html('<li><strong>Twitter</strong></li><li><strong>Facebook</strong></li><li>Pinterest</li><li>YouTube</li><li>Other</li>');
+
+          $('.row-2 div:first').removeClass().addClass('lnr-rech-box-gray').next().removeClass().addClass('lnr-rech-percent-box-gray');
+          $('.row-2 .db-pie-pic img').attr('src','../_/img/gray-color.png');
+          $('.row-2 div h2:eq(0)').html('1,500,000');
+          $('.row-2 div h2:eq(1)').html('15%');
+          $('.row-3 div:first').removeClass().addClass('lnr-rech-box-gray').next().removeClass().addClass('lnr-rech-percent-box-gray');
+          $('.row-3 .db-pie-pic img').attr('src','../_/img/gray-color.png');
+          $('.row-3 div h2:eq(0)').html('1,112,500');
+          $('.row-3 div h2:eq(1)').html('25%');
+          $('.nationl-heat-map img').attr('src','../_/img/scenario-two.jpg');
+        }
+        else if(menu_arr.age=='21-35' && menu_arr.archtype == 'Political')
+        {
+          $('.segment div h2:eq(0)').html('15,000,000');
+          $('.audience div h2:eq(0)').html('5%')
+          $('.row-1 div:first').removeClass().addClass('lnr-rech-box-gray').next().removeClass().addClass('lnr-rech-percent-box-gray');
+          $('.row-1 .db-pie-pic img').attr('src','../_/img/gray-color.png');
+          $('.row-1 div h2:eq(0)').html('9,000,000');
+          $('.row-1 div h2:eq(1)').html('60%');
+          $('.row-1 .add1 img').attr('src','../_/img/media-icon/db-logo.png');
+          $('.row-1 .add2 img').attr('src','../_/img/media-icon/hbo.png');
+          $('.row-2 .add1 img').attr('src','../_/img/media-icon/ny-times.png');
+          $('.row-2 .add2 img').attr('src','../_/img/media-icon/the-atlantic.png');
+          $('.row-3 .add1 img').attr('src','../_/img/media-icon/twitter-icon.png');
+          $('.row-3 .add2 img').attr('src','../_/img/media-icon/linked-in.png');
+
+          $('.row-1 .add1 .db-descrip p:eq(0)').html('Reach : <br><span>1,618,750</span>');
+          $('.row-1 .add1 .db-descrip p:eq(1)').html('Engagements: <br><span>1.2</span>');
+          $('.row-1 .add2 .db-descrip p:eq(0)').html('Reach : <br><span>1,175,000</span>');
+          $('.row-1 .add2 .db-descrip p:eq(1)').html('Engagements: <br><span>0.9</span>');
+
+          $('.row-2 .add1 .db-descrip p:eq(0)').html('Reach : <br><span>565,800</span>');
+          $('.row-2 .add1 .db-descrip p:eq(1)').html('Engagements: <br><span>1.2</span>');
+          $('.row-2 .add2 .db-descrip p:eq(0)').html('Reach : <br><span>480,040</span>');
+          $('.row-2 .add2 .db-descrip p:eq(1)').html('Engagements: <br><span>.85</span>');
+
+          $('.row-3 .add1 .db-descrip p:eq(0)').html('Reach : <br><span>1,289,540</span>');
+          $('.row-3 .add1 .db-descrip p:eq(1)').html('Engagements: <br><span>1.2</span>');
+          $('.row-3 .add2 .db-descrip p:eq(0)').html('Reach : <br><span>990,040</span>');
+          $('.row-3 .add2 .db-descrip p:eq(1)').html('Engagements: <br><span>1.4</span>');
+
+          $('.row-1 .lnr-rearch').html('<li><strong>CNN</strong></li><li><strong>HBO</strong></li><li>AMC</li><li>NBC</li><li>Other</li>');
+          $('.row-2 .lnr-rearch').html('<li><strong>New York Times</strong></li><li><strong>The Atlantic</strong></li><li>Politico.com</li><li>Reuters</li><li>Other</li>');
+          $('.row-3 .lnr-rearch').html('<li><strong>Twitter</strong></li><li><strong>LinkedIn</strong></li><li>Facebook</li><li>YouTube</li><li>Other</li>');
+
+          $('.row-2 div:first').removeClass().addClass('lnr-rech-box-gray').next().removeClass().addClass('lnr-rech-percent-box-gray');
+          $('.row-2 .db-pie-pic img').attr('src','../_/img/gray-color.png');
+          $('.row-2 div h2:eq(0)').html('2,250,000');
+          $('.row-2 div h2:eq(1)').html('15%');
+          $('.row-3 div:first').removeClass().addClass('lnr-rech-box-gray').next().removeClass().addClass('lnr-rech-percent-box-gray');
+          $('.row-3 .db-pie-pic img').attr('src','../_/img/gray-color.png');
+          $('.row-3 div h2:eq(0)').html('3,750,000');
+          $('.row-3 div h2:eq(1)').html('25%');
+          $('.nationl-heat-map img').attr('src','../_/img/scenario-one.jpg');
+        }
+
+    });
+    function filters(opt){
+    $('#search-bar').html('<a href="#" id="close-all"><img src="../_/img/nav-icons/close-btn.png" /></a>');
+    $.each( opt, function( key, value ) {
+    if(value != ''){
+    $('#search-bar').append('<a href="#" class="categry-filtr item " id="'+key+'"> '+value+' <span><img height="28" width="28" src="../_/img/nav-icons/filtr-close-img.png"></span></a>');
+    }
+    });
+    }
+    $('body').on('click','.item',function(){
+    var rm = $(this).text();
+    console.log(rm);
+    var id = $(this).attr('id');
+    menu_arr[id] = '';
+    $(this).remove();
+    $('.done').click();
+    });
+    $('body').on('click','#close-all',function(){
+    menu_arr = {};
+    location.reload();
+    $('#search-bar').html('<a href="#" id="close-all"><img src="../_/img/nav-icons/close-btn.png" /></a>');
+    });
+    var menu_arr = {};
+    $('.age li').click(function(){
+    menu_arr['age'] = $.trim($(this).text());
+    console.log(menu_arr);
+    filters(menu_arr);
+    });
+    $('.gender li').click(function(){
+    menu_arr['gender'] = $.trim($(this).text());
+    console.log(menu_arr);
+    filters(menu_arr);
+    });
+    $('.archtype li').click(function(){
+    menu_arr['archtype'] = $.trim($(this).text());
+    console.log(menu_arr);
+    filters(menu_arr);
+    });
+    $('.personality li').click(function(){
+    menu_arr['personality'] = $.trim($(this).text());
+    console.log(menu_arr);
+    filters(menu_arr);
+    });
+    /*  jQuery activation and setting options. Visit docs.zozoui.com/tabs for
+    complete documentation, option list, public methods, callback events.*/
+    $("#tabbed-nav").zozoTabs({
+    theme: "silver",
+    orientation: "horizontal",
+    position: "top-center",
+    size: "medium",
+    animation: {
+    easing: "easeInOutExpo",
+    duration: 400,
+    effects: "slideV"
+    },
+    defaultTab: "tab1",
+    select: onSelect
+    });
+  $(".nested-tabs").zozoTabs({
+                position: "top-left",
+                theme: "blue",
+                style: "underlined",
+                rounded: false,
+                shadows: false,
+                defaultTab: "tab1",
+                animation: {
+                    easing: "easeInOutCirc",
+                    effects: "slideV",
+                    duration: 350
+                },
+                size: "medium"
+            });
+    $(function(){
+    $(".dropdown").hover(
+    function() {
+    $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+    $(this).toggleClass('open');
+    $('b', this).toggleClass("caret caret-up");
+    },
+    function() {
+    $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+    $(this).toggleClass('open');
+    $('b', this).toggleClass("caret caret-up");
+    });
+    });
+    });
+    </script>
+    </head>
+
+    <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-1 col-md-2 col-sm-3 col-xs-3 sidebar">
+          <div class="logo text-center"> <img src="../_/img/nav-icons/com-logo.png" /> </div>
+          <ul class="side-nav">
+        <li><a href="#" data-toggle="collapse" data-target="#inner-nav" > <img src="../_/img/nav-icons/demo-graphics.png" /><br />
+          Demographics</a>
+              <ul id="inner-nav" class="collapse" >
+            <li class="dropdown"> <a href="#" data-toggle="dropdown" data-target="#inner-nav-3" aria-haspopup="true" aria-expanded="true"> Age</a>
+                  <ul id="inner-nav-3" class="dropdown-menu inner-nav-2 age pull-right" aria-labelledby="inner-nav-3">
+                <div class="inner-close done">Done<span class="pull-right"><img src="../_/img/nav-icons/done-btn.png" /></span></div>
+                <li> <a href="#"> 12-20 <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li> <a href="#"> 21-35 <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+                <li> <a href="#"> 35-54 <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+                <li> <a href="#"> 54+ <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+              </ul>
+                  <div class="clearfix"></div>
+                </li>
+            <li class="dropdown"> <a href="#" data-toggle="dropdown" data-target="#inner-nav-2" aria-haspopup="true" aria-expanded="true"> Gender</a>
+                  <ul id="inner-nav-2" class="dropdown-menu inner-nav-2 gender pull-right">
+                <div class="inner-close done">Done<span class="pull-right"><img src="../_/img/nav-icons/done-btn.png" /></span></div>
+                <li> <a href="#"> Men <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li> <a href="#"> Women <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+              </ul>
+                </li>
+            <li class="dropdown"> <a href="#" data-toggle="dropdown" data-target="#income" aria-haspopup="true" aria-expanded="true"> Income</a>
+                  <ul id="income" class="dropdown-menu inner-nav-2 income pull-right">
+                <div class="inner-close done">Done<span class="pull-right"><img src="../_/img/nav-icons/done-btn.png" /></span></div>
+                <li> <a href="#"> $25k and Under <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li> <a href="#"> $25k to $75k <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+                <li> <a href="#"> $75k and Over <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+              </ul>
+                </li>
+          </ul>
+            </li>
+        <li class="dropdown"><a href="#" data-toggle="dropdown" data-target="#brand" aria-haspopup="true" aria-expanded="true"> <img src="../_/img/nav-icons/brand-affinity.png" /><br />
+          Brand Affinity</a>
+              <ul id="brand" class="dropdown-menu inner-nav-2 brand-affinnity pull-right">
+            <div class="inner-close done">Done<span class="pull-right"><img src="../_/img/nav-icons/done-btn.png" /></span></div>
+            <li><a href="#">Ben & Jerry <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+            <li> <a href="#"> Chobani <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+            <li> <a href="#">Delta <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span> </a> </li>
+            <li> <a href="#">Doritos <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span> </a> </li>
+            <li> <a href="#">Lkea <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+            <li> <a href="#">Nike <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+            <li> <a href="#">Pepsi <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span> </a> </li>
+            <li> <a href="#">Samsung <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span> </a> </li>
+            <li> <a href="#">Starbucks <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span> </a> </li>
+            <li> <a href="#">Tide <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span> </a> </li>
+          </ul>
+              <div class="clearfix"></div>
+            </li>
+        <li><a href="#" data-toggle="collapse" data-target="#life-style-nav"> <img src="../_/img/nav-icons/life-style.png" /><br />
+          Lifestyle</a>
+              <ul id="life-style-nav" class="collapse inner-nav hide">
+            <li class="dropdown"> <a href="#" data-toggle="dropdown" data-target="#lifestage" aria-haspopup="true" aria-expanded="true"> Lifestage </a>
+                  <ul id="lifestage" class="dropdown-menu inner-nav-2 lifestage pull-right">
+                <div class="inner-close done">Done<span class="pull-right"><img src="../_/img/nav-icons/done-btn.png" /></span></div>
+                <li> <a href="#"> Retired <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li> <a href="#"> Student <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+                <li> <a href="#"> Parent <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+                <li> <a href="#"> Married <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a> </li>
+              </ul>
+                  <div class="clearfix"></div>
+                </li>
+            <li class="dropdown"> <a href="#" data-toggle="dropdown" data-target="#consumption" aria-haspopup="true" aria-expanded="true"> Consumption Preference</a>
+                  <ul id="consumption" class="dropdown-menu inner-nav-2 consumption pull-right">
+                <div class="inner-close done">Done<span class="pull-right"><img src="../_/img/nav-icons/done-btn.png" /></span></div>
+                <li><a href="#">Impulsive <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li><a href="#">Discount <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li><a href="#">Conscientious <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li><a href="#">Loyal <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+              </ul>
+                </li>
+            <li class="dropdown"> <a href="#" data-toggle="dropdown" data-target="#archtype" aria-haspopup="true" aria-expanded="true">Archetypes</a>
+                  <ul id="archtype" class="dropdown-menu inner-nav-2 archtype pull-right">
+                <div class="inner-close done">Done<span class="pull-right"><img src="../_/img/nav-icons/done-btn.png" /></span></div>
+                <li><a href="#">Clean and Green <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li><a href="#">Socialite <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li><a href="#">Gadget Guru <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li><a href="#">Traditional <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li><a href="#">Digital Native <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+                <li><a href="#">Politico <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+              </ul>
+                </li>
+            <li> <a href="#">Profession</a> </li>
+          </ul>
+            </li>
+        <li class="dropdown"><a href="#"> <img src="../_/img/nav-icons/personality.png"><br>
+          Personality</a>
+              <ul id="brand" class="dropdown-menu inner-nav-2 personality pull-right">
+            <div class="inner-close done">Done<span class="pull-right"><img src="../_/img/nav-icons/done-btn.png" /></span></div>
+            <li><a href="#">Extrovert <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+            <li><a href="#">Melancholic <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+            <li><a href="#">Reflective <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+            <li><a href="#">Relational <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+            <li><a href="#">Thrill-Seeker <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+            <li><a href="#">Forward Thinking <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+            <li><a href="#">Intellectual <span class="pull-right"><img src="../_/img/nav-icons/plust-icon.png" /></span></a></li>
+          </ul>
+            </li>
+      </ul>
+          <ul class="bottom-ul">
+            <li><a href="#"> <img src="../_/img/profile-brandy.png" class="profile-pic img-circle" /><br />
+              Hi, Brandy !</a></li>
+            <li><a href="#"> <img src="../_/img/nav-icons/settings.png" /><br />
+              Settings</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-11 col-md-10 col-sm-9 col-xs-9 pull-right"> 
+          <!-- Header -->
+          <div class="row header">
+            <div class="col-lg-7 col-md-6 col-sm-6 col-xs-5 top-left-filter">&nbsp;</div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-right top-save-button">
+              <p class="button"><a href="#" class="link">Save</a></p>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4 pull-right segment-link"> <a href="javascript;;">Saved Segments <img src="../_/img/nav-icons/saved-segments.png" /></a> </div>
+          </div>
+          
+          <!-- explorer -->
+          <div class="row explorer-detail-box">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+              <p class="button"><a href="dashboard-buy.html" class="link-back">back</a></p>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 text-center">
+              <h2 class="value-text-1">Action</h2>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">&nbsp;</div>
+          </div>
+          <hr />
+          
+          <!-- explorer content -->
+          
+          <div class="row buyer-explor-contnt">
+          	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            	<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 single-pge-tp">
+						<img class="img-responsive" src="../_/img/explore-buyer/explorer-single/action.png" />
+                   </div>                 
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 buyer-explorer-single">
+					<p>Universe</p>
+                    <h2>90.7</h2>
+                </div> 
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 buyer-explorer-single">
+					<p>Engagement</p>
+                    <h2>1.4</h2>
+                </div> 
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 buyer-explorer-single">
+                 <p>Potential Reach by Platform</p>
+					<div class="potntian-platfrm">                       
+                        <p class="inn-title">Linear <br /><span>45.2</span></p>
+                    </div>                    
+                    <div class="potntian-platfrm">                       
+                        <p class="inn-title">Digital <br /><span>21.0</span></p>
+                    </div>
+                    <div class="potntian-platfrm">                       
+                        <p class="inn-title">Social <br /><span>24.8</span></p>
+                    </div>
+                </div>          
+            </div>          
+          </div>
+          
+          <hr />
+          <div class="clearfix"></div>
+          
+          <div class="row">
+          	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 single-pge-mapping">
+            <img src="../_/img/explore-buyer/explorer-single/single-pge-mapping.png" />
+          </div>     
+        </div>
+        <div class="clearfix"></div>
+        
+        <div class="row">
+          	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 single-pge-mapping">
+            <img src="../_/img/explore-buyer/explorer-single/single-pge-mapping-2.png" />
+          </div>     
+        </div>
+      </div>
+    </div>
+    
+    
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="modal fade" id="tnt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+          <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">The Last Ship</h4>
+      </div>
+          <div class="modal-body">
+        <img class="img-responsive" src="_/img/pop-img.jpg" />
+      </div>
+        </div>
+  </div>
+    </div>
+    
+    
+</body>
+</html>
