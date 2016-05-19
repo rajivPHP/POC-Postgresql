@@ -263,7 +263,7 @@ header.act{background:#fff; box-shadow: 0px 1px 5px rgba(0,0,0,0.15);}
 header.act #logo{background:#fff; margin-top: 11px;}
 header.act #logo img{opacity:0;}
 header.act #logo img.act{opacity:1;}
-header.act nav a{color:#777777; margin-top: 15px; margin-bottom: 15px;}
+header.act nav a{color:#777777; margin-top: 3px; margin-bottom: 15px;}
 header.act nav a:hover{background:#fbc011; color: #fff;}
 header.act nav a.act{background:#fbc011; color:#fff;}
 header.act nav ul ul{top: 69px;}

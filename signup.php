@@ -25,6 +25,26 @@
     <link rel="shortcut icon" href="img/favicon.ico"/>
 
     <title>Sign Up</title>
+   <!-- <style>
+        .badge {
+            display: inline-block;
+            min-width: 10px;
+            padding: 7px 14px;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            background-color: #308C9E;
+            border-radius: 14px;
+            /*  margin: -7px -133px;*/
+            float: right;
+        }
+
+    </style>-->
+
 
 </head>
 
@@ -38,7 +58,9 @@
                                                                                                            alt=""/></a>
 
     <div class="mob-icon"><span></span></div>
-
+    <?php session_start();if(isset($_SESSION['name'])){?>
+        <div style="float:right;color:#fff;font-size:11px;font-weight:bold;margin-right:6%;margin-top:5px;background:rgb(26, 103, 189) none repeat scroll 0%;border:1px solid rgb(26, 103, 189) none repeat scroll 0%;height:17px;border-radius:20px;padding:3px;width:88px;"><?php echo "Welcome"." ".$_SESSION['name'];  ?></div>
+    <?php }?>
     <nav>
 
         <ul>
@@ -59,14 +81,7 @@
             if (isset($_SESSION['username'])) {
                 ?>
                 <li>
-                    <div class="btn-success" style="margin: 18px">
-                        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile</button>
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#" style="margin: 0"><?php echo "Welcome"." ".$_SESSION['name'];  ?></a>
-                            <a class="dropdown-item" href="logout.php" style="margin: 0">Logout</a>
-                        </div>
-                    </div>
+                    <a class="dropdown-item" href="logout.php">Logout</a>
                 </li>
                 <?php
             } else {
@@ -372,10 +387,10 @@ if (isset($_POST['submit'])) {
         ?>
         <script type="text/javascript">
             $.notify('User Added Successfully', 'success');
-            setTimeout(
+            /*setTimeout(
                 function () {
                     window.location.href = 'signin.php'
-                }, 2000);
+                }, 2000);*/
 
         </script>
     <?php
