@@ -34,28 +34,43 @@
 
 <!-- HEADER -->
 
-<header class="act default-act"> <a href="index.html" id="logo"><img src="img/theme-2/logo.png" alt=""/><img class="act" src="img/theme-2/logo-act.png" alt=""/></a>
+<header class="act default-act"> <a href="index.php" id="logo"><img src="img/theme-2/logo.png" alt=""/><img class="act" src="img/theme-2/logo-act.png" alt=""/></a>
 
   <div class="mob-icon"> <span></span> </div>
 
   <nav>
 
     <ul>
+      <li><a href="index.php">Overview</a></li>
 
-      <li><a href="index.html">Overview</a></li>
+      <li><a href="events.php">Events</a></li>
 
-      <li><a href="events.html">Events</a></li>
+      <li><a href="samples.php">Samples Request</a></li>
 
-      <li><a href="samples.html">Samples Request</a></li>
+      <li><a href="literature.php">Literature Request</a></li>
 
-      <li><a href="literature.html">Literature Request</a></li>
+      <li><a href="supportcases.php"  class="act">Support Cases</a></li>
 
-      <li><a href="supportcases.html" class="act">Support Cases</a></li>
-
-      <li><a href="signup.php">Sign Up</a></li>
-	  
-	  <li><a href="signin.php">Sign In</a></li>
-
+      <li><a href="signup.php">Signup</a></li>
+      <?php
+      session_start();
+      if (isset($_SESSION['username'])) {
+        ?>
+        <li>
+          <div class="btn-success" style="margin: 18px">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile</button>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#" style="margin: 0"><?php echo "Welcome"." ".$_SESSION['name'];  ?></a>
+              <a class="dropdown-item" href="logout.php" style="margin: 0">Logout</a>
+            </div>
+          </div>
+        </li>
+        <?php
+      } else {
+        ?>
+        <li><a href="signin.php">Sign In</a></li>
+      <?php } ?>
     </ul>
 
   </nav>
@@ -608,11 +623,11 @@
 
       <div class="subscribe"> <span class="subscribe-text">Stay informed our updates</span>
 
-        <form>
+        <form class="subscribe-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 
-          <input type="email" placeholder="Enter your email" required/>
+          <input type="email" placeholder="Enter your email" name="email" required/>
 
-          <input type="submit" value="" />
+          <input type="submit" value="" name="newsletter"/>
 
         </form>
 
@@ -729,9 +744,36 @@
         
 
     </script> 
+<script type="text/javascript" src="js/notify.js"></script>
+<!--<script src="js/subscription.js"></script>-->
+<?php
+include_once("functions/functions.php");
+if (isset($_POST['newsletter'])) {
+  //Post Values
+  $email = pg_escape_string($_POST['email']);
 
-<script src="js/subscription.js"></script>
+  //Passing values
+  $addNewsLetter = addNewsLetter($email);
+  if ($addNewsLetter) {
+    ?>
+    <script type="text/javascript">
+      $.notify("Subscription was Successful", 'success')
+    </script>
+  <?php
+  }
+  else{
+  ?>
+    <script type="text/javascript">
+      $.notify("Subscription was not Successful", {
+        style: 'bootstrap'
+      });
+    </script>
+    <?php
+  }
 
+}
+?>
+?>
 </body>
 
 </html>

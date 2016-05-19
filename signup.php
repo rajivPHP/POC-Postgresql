@@ -33,30 +33,46 @@
 
 <!-- HEADER -->
 
-<header class="act default-act"><a href="index.html" id="logo"><img src="img/theme-2/logo.png" alt=""/><img class="act"
-                                                                                                            src="img/theme-2/logo-act.png"
-                                                                                                            alt=""/></a>
+<header class="act default-act"><a href="index.php" id="logo"><img src="img/theme-2/logo.png" alt=""/><img class="act"
+                                                                                                           src="img/theme-2/logo-act.png"
+                                                                                                           alt=""/></a>
 
     <div class="mob-icon"><span></span></div>
 
     <nav>
 
         <ul>
+            <li><a href="index.php">Overview</a></li>
 
-            <li><a href="index.html">Overview</a></li>
+            <li><a href="events.php">Events</a></li>
 
-            <li><a href="events.html">Events</a></li>
+            <li><a href="samples.php">Samples Request</a></li>
 
-            <li><a href="samples.html">Samples Request</a></li>
+            <li><a href="literature.php">Literature Request</a></li>
 
-            <li><a href="literature.html">Literature Request</a></li>
+            <li><a href="supportcases.php">Support Cases</a></li>
 
-            <li><a href="supportcases.html">Support Cases</a></li>
+            <li><a href="signup.php" class="act">Signup</a></li>
 
-            <li><a href="signup.php" class="act">Sign Up</a></li>
-
-            <li><a href="signin.php">Sign In</a></li>
-
+            <?php
+            session_start();
+            if (isset($_SESSION['username'])) {
+                ?>
+                <li>
+                    <div class="btn-success" style="margin: 18px">
+                        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile</button>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#" style="margin: 0"><?php echo "Welcome"." ".$_SESSION['name'];  ?></a>
+                            <a class="dropdown-item" href="logout.php" style="margin: 0">Logout</a>
+                        </div>
+                    </div>
+                </li>
+                <?php
+            } else {
+                ?>
+                <li><a href="signin.php">Sign In</a></li>
+            <?php } ?>
         </ul>
 
     </nav>
@@ -153,23 +169,23 @@
 
                     <div class="col-md-7 col-md-offset-1 wow fadeInRight" data-wow-delay="0.3s">
 
-                        <form class="signup-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                        <form class="signup1-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 
                             <input class="required" type="text" placeholder="Your name" value="" name="name"/>
 
                             <input class="required" type="text" placeholder="Your email" value="" name="email"/>
 
-                            <input type="text" placeholder="Your password" value="" name="password"/>
+                            <input type="password" placeholder="Your password" value="" name="password"/>
 
                             <select name="role">
 
-                                <option value="">Role</option>
+                                <option>Role</option>
 
-                                <option value="1">Physician</option>
+                                <option>Physician</option>
 
-                                <option value="2">Nurse</option>
+                                <option>Nurse</option>
 
-                                <option value="3">Pharmacist</option>
+                                <option>Pharmacist</option>
 
                             </select>
 
@@ -218,14 +234,13 @@
 
             <div class="subscribe"><span class="subscribe-text">Stay informed our updates</span>
 
-                <form>
+                <form class="subscribe-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 
-                    <input type="email" placeholder="Enter your email" required/>
+                    <input type="email" placeholder="Enter your email" name="email" required/>
 
-                    <input type="submit" value=""/>
+                    <input type="submit" value="" name="newsletter"/>
 
                 </form>
-
             </div>
 
             <div class="footer-bottom">
@@ -272,7 +287,7 @@
 
             <div data-theme="theme-3" style="color: #4caf50;" class="entry"></div>
 
-            <div data-theme="theme-4" style="color: #ba68c8;" class="entry"></div> 
+            <div data-theme="theme-4" style="color: #ba68c8;" class="entry"></div>
 
             <div data-theme="theme-5" style="color: #d80d0d;" class="entry"></div>
 
@@ -280,7 +295,7 @@
 
             <div data-theme="theme-7" style="color: #dd137b;" class="entry"></div>
 
-            <div data-theme="theme-8" style="color: #482d1d;" class="entry"></div>            
+            <div data-theme="theme-8" style="color: #482d1d;" class="entry"></div>
 
         </div>
 
@@ -338,6 +353,7 @@
 
 </script>
 <script src="js/notify.js"></script>
+<!--<script src="js/subscription.js"></script>-->
 <?php
 
 include_once "functions/functions.php";
@@ -350,12 +366,17 @@ if (isset($_POST['submit'])) {
     $role = pg_escape_string($_POST['role']);
     $about_me = pg_escape_string($_POST['text']);
 
-    //Pass to Add User
+    //Passing to Add User
     $resultAddUser = addUser($name, $email, $password, $role, $about_me);
     if ($resultAddUser) {
         ?>
         <script type="text/javascript">
-            $.notify('User Added Successfully', "success");
+            $.notify('User Added Successfully', 'success');
+            setTimeout(
+                function () {
+                    window.location.href = 'signin.php'
+                }, 2000);
+
         </script>
     <?php
     return true;
@@ -363,15 +384,37 @@ if (isset($_POST['submit'])) {
     else{
     ?>
         <script type="text/javascript">
-            $.notify('User Added Successfully', {
+            $.notify('User Not Added Successfully', {
                 style: 'bootstrap'
             });
         </script>
         <?php
     }
 }
+if (isset($_POST['newsletter'])) {
+    //Post Values
+    $email = pg_escape_string($_POST['email']);
+
+    //Passing values
+    $addNewsLetter = addNewsLetter($email);
+    if ($addNewsLetter) {
+        ?>
+        <script type="text/javascript">
+            $.notify("Subscription was Successful", 'success')
+        </script>
+    <?php
+    }
+    else{
+    ?>
+        <script type="text/javascript">
+            $.notify("Subscription was not Successful", {
+                style: 'bootstrap'
+            });
+        </script>
+        <?php
+    }
+
+}
 ?>
-<script src="js/subscription.js"></script>
 </body>
 </html>
-

@@ -31,7 +31,7 @@
             <div class="row-view">
                 <div class="cell-view">
                     <div class="teaser-logo">
-                        <a href="index.html" class="logo"><img src="img/theme-1/logo-big.png" alt="" /></a>
+                        <a href="index.php" class="logo"><img src="img/theme-1/logo-big.png" alt="" /></a>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                 <div class="cell-view">
                     <div class="content-404">
                         <div class="title">404</div>
-                        <div class="description">The page you are looking for is missing or currently unavailable. Please use the correct link or visit <a href="index.html">homepage</a>.</div>
+                        <div class="description">The page you are looking for is missing or currently unavailable. Please use the correct link or visit <a href="index.php">homepage</a>.</div>
                     </div>
                 </div>
             </div>

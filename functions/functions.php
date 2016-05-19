@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: aequalis
+ * User: Rajiv
  * Date: 18/5/16
  * Time: 5:10 PM
  */
@@ -23,12 +23,11 @@ function addUser($name, $email, $password, $role, $about_me)
     if ($connect = dbConnect()) {
         $resultAddUser = pg_query($dbconn, "INSERT INTO hcp_users(name, email, password,role,about_me)
                   VALUES('$name','$email','$password','$role','$about_me');");
-        if ($resultAddUser) {
-            $numRows = pg_numrows($resultAddUser);
-            return $numRows;
-        } else {
+        $numRowsUser = pg_affected_rows($resultAddUser);
+        if ($numRowsUser)
+            return $numRowsUser;
+        else
             return false;
-        }
     }
 }
 
@@ -43,6 +42,56 @@ function loginUser($email, $password)
         } else {
             return false;
         }
+    }
+}
+
+function addEvents($name, $email, $phone, $event, $questions)
+{
+    global $dbconn;
+    if ($connect = dbConnect()) {
+        $resultAddEvents = pg_query($dbconn, "INSERT INTO hcp_events(name, email, phone,event,questions)
+                  VALUES('$name','$email','$phone','$event','$questions');");
+        $numRowsEvents = pg_affected_rows($resultAddEvents);
+        if ($numRowsEvents)
+            return $numRowsEvents;
+        else
+            return false;
+    }
+}
+
+function addSampleRequest($name, $email, $phone, $medicine)
+{
+    global $dbconn;
+    if ($connect = dbConnect()) {
+        $resultAddSampleRequest = pg_query($dbconn, "INSERT INTO hcp_sample_request(name, email, phone,medicine)
+                  VALUES('$name','$email','$phone','$medicine');");
+        $numRowsSampleRequest = pg_affected_rows($resultAddSampleRequest);
+        if ($numRowsSampleRequest)
+            return $numRowsSampleRequest;
+        else
+            return false;
+    }
+}
+
+function addLiteratureRequest($name, $email, $phone, $medicine, $additional_notes)
+{
+    global $dbconn;
+    if ($connect = dbConnect()) {
+        $resultAddLiteratureRequest = pg_query($dbconn, "INSERT INTO hcp_literature_request(name, email, phone,medicine,additional_notes)
+                  VALUES('$name','$email','$phone','$medicine','$additional_notes');");
+        $numRowsLiteratureRequest = pg_affected_rows($resultAddLiteratureRequest);
+        return $numRowsLiteratureRequest;
+    }
+}
+
+function addNewsLetter($email)
+{
+    global $dbconn;
+    if ($connect = dbConnect()) {
+        $resultAddNewsLetter = pg_query($dbconn, "INSERT INTO hcp_news_letter(email)
+                  VALUES('$email');");
+        $numRowsNewsLetter = pg_affected_rows($resultAddNewsLetter);
+        return $numRowsNewsLetter;
     }
 }
 
