@@ -169,45 +169,43 @@
                                 </div>
 
 
+                                <form class="forget-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>"
+                                      name="forget-form">
 
-                                    <form class="forget-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" name="forget-form">
+                                    <input class="required" type="text" placeholder="Your email" value="" name="email"/>
 
-                                        <input class="required" type="text" placeholder="Your email" value="" name="email"/>
+                                    <div class="submit-wraper">
 
-                                        <div class="submit-wraper">
+                                        <div class="button" style="margin-right:20%;">Reset Password
 
-                                            <div class="button" style="margin-right:20%;">Reset Password
-
-                                                <input type="submit"  name="resetpassword"/>
-
-                                            </div>
+                                            <input type="submit" name="resetpassword"/>
 
                                         </div>
 
-                                        <!-- <input type="hidden" name="mailto" value="info@vebinary.com" style="display: none;" /> -->
+                                    </div>
 
-                                    </form>
+                                    <!-- <input type="hidden" name="mailto" value="info@vebinary.com" style="display: none;" /> -->
 
-                                </div>
+                                </form>
 
                             </div>
 
-                            <!-- <input type="hidden" name="mailto" value="info@vebinary.com" style="display: none;" /> -->
-
-                        </form>
-
                     </div>
 
+                    <!-- <input type="hidden" name="mailto" value="info@vebinary.com" style="display: none;" /> -->
 
-                    <div class="form-popup">
+                    </form>
 
-                        <div class="form-popup-close-layer"></div>
+                </div>
 
-                        <div class="form-popup-content">
 
-                            <div class="text">Lorem Ipsum Dollor Sit Ammet consectetur dim Elit</div>
+                <div class="form-popup">
 
-                        </div>
+                    <div class="form-popup-close-layer"></div>
+
+                    <div class="form-popup-content">
+
+                        <div class="text">Lorem Ipsum Dollor Sit Ammet consectetur dim Elit</div>
 
                     </div>
 
@@ -217,51 +215,53 @@
 
         </div>
 
-
-        <!-- FOOTER -->
-
-        <footer>
-
-            <div class="subscribe"><span class="subscribe-text">Stay informed our updates</span>
-
-                <form class="subscribe-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-
-                    <input type="email" placeholder="Enter your email" name="email" required/>
-
-                    <input type="submit" value="" name="newsletter"/>
-
-                </form>
-
-            </div>
-
-            <div class="footer-bottom">
-
-                <div class="footer-linck"><a href="#">Privacy Policy</a> <a href="#">About Us </a> <a
-                        href="#">Support</a> <a href="#">FAQ</a> <a href="#">Blog</a> <a href="#">Forum</a></div>
-
-                <div class="media-icon"><a href="#"><img src="img/theme-2/c-icon.png" alt=""/></a> <a href="#"><img
-                            src="img/theme-2/c-icon1.png" alt=""/></a> <a href="#"><img src="img/theme-2/c-icon2.png"
-                                                                                        alt=""/></a> <a href="#"><img
-                            src="img/theme-2/c-icon3.png" alt=""/></a></div>
-
-                <div class="copy"><span>© 2016 All rights reserved. VHealth</span></div>
-
-            </div>
-
-            <div class="back-to-top"><i class="fa fa-chevron-up"></i></div>
-
-        </footer>
-
-
-        <!-- POPUP "VIDEO" -->
-
-        <div class="video-popup"><span></span> <span></span>
-
-            <iframe src="#"></iframe>
-
-            <a href="#"></a></div>
-
     </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="subscribe"><span class="subscribe-text">Stay informed our updates</span>
+
+            <form class="subscribe-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+
+                <input type="email" placeholder="Enter your email" name="email" required/>
+
+                <input type="submit" value="" name="newsletter"/>
+
+            </form>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="footer-linck"><a href="#">Privacy Policy</a> <a href="#">About Us </a> <a
+                    href="#">Support</a> <a href="#">FAQ</a> <a href="#">Blog</a> <a href="#">Forum</a></div>
+
+            <div class="media-icon"><a href="#"><img src="img/theme-2/c-icon.png" alt=""/></a> <a href="#"><img
+                        src="img/theme-2/c-icon1.png" alt=""/></a> <a href="#"><img src="img/theme-2/c-icon2.png"
+                                                                                    alt=""/></a> <a href="#"><img
+                        src="img/theme-2/c-icon3.png" alt=""/></a></div>
+
+            <div class="copy"><span>© 2016 All rights reserved. VHealth</span></div>
+
+        </div>
+
+        <div class="back-to-top"><i class="fa fa-chevron-up"></i></div>
+
+    </footer>
+
+
+    <!-- POPUP "VIDEO" -->
+
+    <div class="video-popup"><span></span> <span></span>
+
+        <iframe src="#"></iframe>
+
+        <a href="#"></a></div>
+
+</div>
 
 </div>
 
@@ -417,7 +417,7 @@ if (isset($_POST['resetpassword'])) {
         $verificationCode = md5(uniqid(rand()));
         $updateCode = resetPassword($email['id'], $verificationCode);
         $subject = "Reset Password";
-        $message = "Hello , $postValueEmail<br /><br />We got requested to reset your password, if you do this then just click the following link to reset your password, if not just ignore this email,<br /><br />
+        $message = "Hello , $postValueEmail<br /><br />We got requested to reset your password for <strong>HCP</strong>, if you do this then just click the following link to reset your password, if not just ignore this email,<br /><br />
         Click Following Link To Reset Your Password <br /><br /><a href='http://$_SERVER[REMOTE_ADDR]/bitbucket/HCP_POC_v1/resetpassword.php?id=$id'>click here to reset your password</a><br /><br />Verification Code: $verificationCode<br /><br />thank you";
         $sendMail = sendLinkResetPassword($postValueEmail, $subject, $message);
         if ($sendMail) {
