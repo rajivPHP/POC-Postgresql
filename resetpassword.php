@@ -113,7 +113,7 @@
 
                     <div class="col-md-6 col-md-offset-3 wow flipInX" data-wow-delay="0.3s">
 
-                        <h2 class="title">sign In</h2>
+                        <h2 class="title">Reset Account</h2>
 
                         <div class="description">One account is all you need</div>
 
@@ -155,38 +155,22 @@
 
                         <form class="login-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 
-                            <input class="required" type="text" placeholder="Your email" value="" name="email"/>
+                            <input class="required" type="text" placeholder="Verification Code" id="verificationcode"
+                                   name="verificationcode"/>
 
-                            <input type="password" placeholder="Your password" value="" name="password"/>
+                            <input class="required" type="password" placeholder="Your password" id="password"
+                                   name="password"/>
+
+                            <input type="password" placeholder="Your confirm password" id="confirmpassword"
+                                   name="confirmpassword"/>
+
+                            <input type="hidden" id="id" value="<?php echo $_GET['id']; ?>" name="id"/>
 
                             <div class="submit-wraper">
 
-                                <div class="button">Sign In
+                                <div class="button" style="margin-right:50%;">Reset Password
 
-                                    <input type="submit" value="" name="login"/>
-
-
-                                </div>
-
-
-
-                                    <form class="forget-form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" name="forget-form">
-
-                                        <input class="required" type="text" placeholder="Your email" value="" name="email"/>
-
-                                        <div class="submit-wraper">
-
-                                            <div class="button" style="margin-right:20%;">Reset Password
-
-                                                <input type="submit"  name="resetpassword"/>
-
-                                            </div>
-
-                                        </div>
-
-                                        <!-- <input type="hidden" name="mailto" value="info@vebinary.com" style="display: none;" /> -->
-
-                                    </form>
+                                    <input type="submit" value="" name="resetpassword" id="resetpassword"/>
 
                                 </div>
 
@@ -197,7 +181,6 @@
                         </form>
 
                     </div>
-
 
                     <div class="form-popup">
 
@@ -278,7 +261,7 @@
 
             <div data-theme="theme-3" style="color: #4caf50;" class="entry"></div>
 
-            <div data-theme="theme-4" style="color: #ba68c8;" class="entry"></div> 
+            <div data-theme="theme-4" style="color: #ba68c8;" class="entry"></div>
 
             <div data-theme="theme-5" style="color: #d80d0d;" class="entry"></div>
 
@@ -286,7 +269,7 @@
 
             <div data-theme="theme-7" style="color: #dd137b;" class="entry"></div>
 
-            <div data-theme="theme-8" style="color: #482d1d;" class="entry"></div>            
+            <div data-theme="theme-8" style="color: #482d1d;" class="entry"></div>
 
         </div>
 
@@ -348,42 +331,6 @@
 <?php
 include_once "functions/functions.php";
 
-if (isset($_POST['login'])) {
-
-    $userEmail = pg_escape_string($_POST['email']);
-    $userPassword = pg_escape_string($_POST['password']);
-
-    //Login Check
-    $loginUser = loginUser($userEmail, $userPassword);
-    if ($loginUser) {
-        session_start();
-        $_SESSION['username'] = $loginUser['email'];
-        $_SESSION['name'] = $loginUser['name'];
-        ?>
-        <script type="text/javascript">
-            $.notify('User logged in successfully', 'success');
-            /* function showPage() {
-             window.location.href='index.html';
-             } */
-
-            setTimeout(
-                function () {
-                    window.location.href = 'index.php'
-                }, 2000);
-
-        </script>
-    <?php
-    }
-    else{
-    ?>
-        <script type="text/javascript">
-            $.notify('User not logged in', {
-                style: 'bootstrap'
-            });
-        </script>
-        <?php
-    }
-}
 if (isset($_POST['newsletter'])) {
     //Post Values
     $email = pg_escape_string($_POST['email']);
@@ -409,27 +356,55 @@ if (isset($_POST['newsletter'])) {
 
 }
 if (isset($_POST['resetpassword'])) {
-    $postValueEmail = pg_escape_string($_POST['email']);
-    $email = getDetails($postValueEmail);
-    if ($email) {
-        $name = $email['name'];
-        $id = base64_encode($email['id']);
-        $verificationCode = md5(uniqid(rand()));
-        $updateCode = resetPassword($email['id'], $verificationCode);
-        $subject = "Reset Password";
-        $message = "Hello , $postValueEmail<br /><br />We got requested to reset your password, if you do this then just click the following link to reset your password, if not just ignore this email,<br /><br />
-        Click Following Link To Reset Your Password <br /><br /><a href='http://$_SERVER[REMOTE_ADDR]/bitbucket/HCP_POC_v1/resetpassword.php?id=$id'>click here to reset your password</a><br /><br />Verification Code: $verificationCode<br /><br />thank you";
-        $sendMail = sendLinkResetPassword($postValueEmail, $subject, $message);
-        if ($sendMail) {
-            ?>
-            <script type="text/javascript">
-                $.notify("Reset Password link sent to your Mail", 'success')
-            </script>
-            <?php
-        }
+    //Post Values
+    $idUpdatePassword = base64_decode($_POST['id']);
+    $postValuePassword = pg_escape_string($_POST['password']);
+    $postValueConfirmPassword = pg_escape_string($_POST['confirmpassword']);
+    $postVerificationCode = pg_escape_string($_POST['verificationcode']);
+
+    $code = getDetailsPassword($postVerificationCode);
+    //Checking the Verificication
+    if ($code['password'] == $postVerificationCode) {
+        //Checking Password if same
+        if ($postValuePassword == $postValueConfirmPassword && $postValueConfirmPassword !== "" && $postValuePassword !== "")
+            $updatePassword = resetPassword($idUpdatePassword, $postValuePassword);
+    if ($updatePassword) {
+        ?>
+        <script type="text/javascript">
+            $.notify("Resetting Password was Success", 'success');
+            setTimeout(function () {
+                window.location.replace('signin.php');
+            }, 5000);
+        </script>
+    <?php
     }
+    else{
+    ?>
+        <script type="text/javascript">
+            $.notify("Resetting Password was not Matching", {
+                style: 'bootstrap'
+            });
+            setTimeout(function () {
+                window.location.replace('signin.php');
+            }, 5000);
+        </script>
+    <?php
+    }
+    }
+    else{
+    ?>
+        <script type="text/javascript">
+            $.notify("Verification Code do not Match", {
+                style: 'bootstrap'
+            });
+            setTimeout(function () {
+                window.location.replace('signin.php');
+            }, 5000);
+        </script>
+        <?php
+    }
+
 }
 ?>
 </body>
 </html>
-

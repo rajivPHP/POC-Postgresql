@@ -95,4 +95,64 @@ function addNewsLetter($email)
     }
 }
 
+function resetPassword($id, $key)
+{
+    global $dbconn;
+    if ($connect = dbConnect()) {
+        $resultForgetPassword = pg_query($dbconn, "UPDATE hcp_users set password='$key' WHERE id='$id'");
+        $resForgetPassword = pg_affected_rows($resultForgetPassword);
+        if ($resForgetPassword)
+            return $resForgetPassword;
+        else
+            return false;
+    }
+}
+
+function getDetails($email)
+{
+    global $dbconn;
+    if ($connect = dbConnect()) {
+        $resultDetails = pg_exec($dbconn, "SELECT * FROM hcp_users WHERE email='$email'");
+        if ($resultDetails) {
+            $resultRows = pg_fetch_array($resultDetails);
+            return $resultRows;
+        } else {
+            return false;
+        }
+    }
+}
+function getDetailsPassword($code){
+    global $dbconn;
+    if ($connect = dbConnect()) {
+        $resultCode = pg_exec($dbconn, "SELECT * FROM hcp_users WHERE password='$code'");
+        if ($resultCode) {
+            $resultCodeRows = pg_fetch_array($resultCode);
+            return $resultCodeRows;
+        } else {
+            return false;
+        }
+    }
+}
+
+function sendLinkResetPassword($email,$subject, $message)
+{
+    $config = array();
+    $config['api_key'] = "key-198352edc5a59b6a37e5b3f8c7c7a805";
+    $config['api_url'] = "https://api.mailgun.net/v3/sandboxa61134189e6e4bf2b385e0fbbf1cfa86.mailgun.org";
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
+    curl_setopt($ch, CURLOPT_USERPWD, 'api:'.$config['api_key']);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
+    curl_setopt($ch, CURLOPT_URL, 'https://api.mailgun.net/v3/sandboxa61134189e6e4bf2b385e0fbbf1cfa86.mailgun.org/messages');
+    curl_setopt($ch, CURLOPT_POSTFIELDS,
+        array('from' => 'javajamesb08@gmail.com',
+            'to' => "$email",
+            'subject' => "$subject",
+            'html' => "$message"));
+    $result = curl_exec($ch);
+    curl_close($ch);
+    if($result)
+        return $result;
+}
 ?>

@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e7bea64-0a01-4c76-adc2-741b12086a8b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resetpassword.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/events.php" afterPath="$PROJECT_DIR$/events.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/literature.php" afterPath="$PROJECT_DIR$/literature.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logout.php" afterPath="$PROJECT_DIR$/logout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/samples.php" afterPath="$PROJECT_DIR$/samples.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signup.php" afterPath="$PROJECT_DIR$/signup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/supportcases.php" afterPath="$PROJECT_DIR$/supportcases.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions/functions.php" afterPath="$PROJECT_DIR$/functions/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/signin.php" afterPath="$PROJECT_DIR$/signin.php" />
     </list>
     <ignored path="HCP_POC_v1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,29 +34,13 @@
     <favorites_list name="HCP_POC_v1" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="events.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/events.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="59" column="264" selection-start-line="59" selection-start-column="241" selection-end-line="59" selection-end-column="264" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1463664757290" expanded="true" signature="45718:45743" placeholder="..." />
-                <marker date="1463664757290" expanded="true" signature="45922:45956" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="literature.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/literature.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="-390">
               <caret line="60" column="268" selection-start-line="60" selection-start-column="268" selection-end-line="60" selection-end-column="268" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,126 +48,9 @@
       <file leaf-file-name="supportcases.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/supportcases.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
+            <state relative-caret-position="-2234">
               <caret line="59" column="268" selection-start-line="59" selection-start-column="268" selection-end-line="59" selection-end-column="268" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="66" column="89" selection-start-line="66" selection-start-column="89" selection-end-line="66" selection-end-column="89" />
-              <folding>
-                <marker date="1463664845074" expanded="true" signature="11726:12188" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="11849:12156" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="12289:12767" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="12412:12735" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="12868:13301" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="12991:13269" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="13402:13866" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="13525:13834" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="14003:23797" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="23917:27613" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="23966:27597" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="24014:24467" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="24108:24443" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="24502:27577" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="24611:25045" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="24727:25017" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="25154:25574" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="25270:25546" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="25683:26024" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="25799:25996" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="26133:26535" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="26249:26507" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="26644:27046" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="26760:27018" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="27155:27553" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="27271:27525" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="27663:37190" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="37242:44536" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="44588:54385" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="54436:57856" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="57904:58392" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="58438:59886" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="58475:58872" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="58578:58852" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="58913:59790" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="58957:59251" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="59293:59640" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="59676:59770" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="59954:60093" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="60123:61033" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="61422:61481" placeholder="..." />
-                <marker date="1463664845074" expanded="true" signature="61456:61480" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="328" column="126" selection-start-line="328" selection-start-column="119" selection-end-line="328" selection-end-column="126" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logout.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="samples.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/samples.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="60" column="268" selection-start-line="60" selection-start-column="268" selection-end-line="60" selection-end-column="268" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1463664790258" expanded="true" signature="43031:43056" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions/functions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="14" />
-              <folding>
-                <marker date="1463655188030" expanded="true" signature="517:650" placeholder="INSERT INTO hcp_users... " />
-                <marker date="1463655188030" expanded="true" signature="958:1027" placeholder="SELECT * FRO... hcp_users" />
-                <marker date="1463655188030" expanded="true" signature="1381:1513" placeholder="INSERT INTO hcp_events... " />
-                <marker date="1463655188030" expanded="true" signature="1859:1982" placeholder="INSERT INTO hcp_sample_request... " />
-                <marker date="1463655188030" expanded="true" signature="2383:2547" placeholder="INSERT INTO hcp_literature_request... " />
-                <marker date="1463655188030" expanded="true" signature="2823:2892" placeholder="INSERT INTO hcp_literature_request... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signup.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/signup.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="61" column="268" selection-start-line="61" selection-start-column="268" selection-end-line="61" selection-end-column="268" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -195,9 +58,72 @@
       <file leaf-file-name="signin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/signin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-900">
+            <state relative-caret-position="-2051">
+              <caret line="172" column="138" selection-start-line="172" selection-start-column="138" selection-end-line="172" selection-end-column="138" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1464093918044" expanded="true" signature="12550:12617" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="203" column="112" selection-start-line="203" selection-start-column="112" selection-end-line="203" selection-end-column="112" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resetpassword.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resetpassword.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="353" column="13" selection-start-line="353" selection-start-column="13" selection-end-line="353" selection-end-column="13" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1464094646792" expanded="true" signature="5837:5862" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HCP.public.hcp_users" pinned="false" current-in-tab="true">
+        <entry file="dbDummy://dbtable:/3d77bd4d/d9e270f6-fc24-4c06-9b8b-d7266c034c39/HCP.public.hcp_users">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functions/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="97" column="33" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+              <folding>
+                <marker date="1464085738005" expanded="true" signature="517:650" placeholder="INSERT INTO hcp_users... " />
+                <marker date="1464085738005" expanded="true" signature="958:1027" placeholder="SELECT * FRO... hcp_users" />
+                <marker date="1464085738005" expanded="true" signature="1381:1513" placeholder="INSERT INTO hcp_events... " />
+                <marker date="1464085738005" expanded="true" signature="1859:1982" placeholder="INSERT INTO hcp_sample_request... " />
+                <marker date="1464085738005" expanded="true" signature="2383:2547" placeholder="INSERT INTO hcp_literature_request... " />
+                <marker date="1464085738005" expanded="true" signature="2823:2892" placeholder="INSERT INTO hcp_news_letter... " />
+                <marker date="1464085738005" expanded="true" signature="3151:3202" placeholder="UPDATE hcp_u... " />
+                <marker date="1464085738005" expanded="true" signature="3158:3164" placeholder="SELECT * FRO... hcp_us" />
+                <marker date="1464085738005" expanded="true" signature="3158:3202" placeholder="SELECT * FRO... hcp_users" />
+                <marker date="1464085738005" expanded="true" signature="3522:3566" placeholder="SELECT * FRO... hcp_users" />
+                <marker date="1464085738005" expanded="true" signature="3881:3927" placeholder="SELECT * FRO... hcp_users" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -211,18 +137,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/config/config.php" />
-        <option value="dbtable:/3d77bd4d/d9e270f6-fc24-4c06-9b8b-d7266c034c39/HCP.public.hcp_users" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d9e270f6-fc24-4c06-9b8b-d7266c034c39/console.sql" />
-        <option value="$PROJECT_DIR$/signin.php" />
-        <option value="$PROJECT_DIR$/functions/functions.php" />
         <option value="$PROJECT_DIR$/logout.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/events.php" />
         <option value="$PROJECT_DIR$/literature.php" />
         <option value="$PROJECT_DIR$/supportcases.php" />
         <option value="$PROJECT_DIR$/samples.php" />
         <option value="$PROJECT_DIR$/signup.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/functions/functions.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/signin.php" />
+        <option value="dbtable:/3d77bd4d/d9e270f6-fc24-4c06-9b8b-d7266c034c39/HCP.public.hcp_users" />
+        <option value="$PROJECT_DIR$/resetpassword.php" />
       </list>
     </option>
   </component>
@@ -237,10 +164,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="57" />
-    <option name="y" value="21" />
-    <option name="width" value="1309" />
-    <option name="height" value="747" />
+    <option name="x" value="53" />
+    <option name="y" value="-4" />
+    <option name="width" value="1313" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -249,7 +176,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -285,6 +212,34 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HCP_POC_v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HCP_POC_v1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="functions" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HCP_POC_v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HCP_POC_v1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -298,10 +253,22 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/js" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
@@ -351,34 +318,36 @@
       <workItem from="1463580389433" duration="1333000" />
       <workItem from="1463581962329" duration="3364000" />
       <workItem from="1463637213638" duration="24482000" />
+      <workItem from="1464068427202" duration="7987000" />
+      <workItem from="1464077243821" duration="13641000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43462000" />
+    <option name="totallyTimeSpent" value="65090000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="21" width="1309" height="747" extended-state="6" />
+    <frame x="53" y="-4" width="1313" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3338438" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26124704" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26907948" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.308603" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30841857" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3338438" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -419,6 +388,25 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/signup.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="268" selection-start-line="61" selection-start-column="268" selection-end-line="61" selection-end-column="268" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/signin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1464093918044" expanded="true" signature="12550:12617" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/signup.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -430,12 +418,17 @@
         <state relative-caret-position="405">
           <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
-            <marker date="1463655188030" expanded="true" signature="517:650" placeholder="INSERT INTO hcp_users... " />
-            <marker date="1463655188030" expanded="true" signature="958:1027" placeholder="SELECT * FRO... hcp_users" />
-            <marker date="1463655188030" expanded="true" signature="1381:1513" placeholder="INSERT INTO hcp_events... " />
-            <marker date="1463655188030" expanded="true" signature="1859:1982" placeholder="INSERT INTO hcp_sample_request... " />
-            <marker date="1463655188030" expanded="true" signature="2383:2547" placeholder="INSERT INTO hcp_literature_request... " />
-            <marker date="1463655188030" expanded="true" signature="2823:2892" placeholder="INSERT INTO hcp_literature_request... " />
+            <marker date="1464085738005" expanded="true" signature="517:650" placeholder="INSERT INTO hcp_users... " />
+            <marker date="1464085738005" expanded="true" signature="958:1027" placeholder="SELECT * FRO... hcp_users" />
+            <marker date="1464085738005" expanded="true" signature="1381:1513" placeholder="INSERT INTO hcp_events... " />
+            <marker date="1464085738005" expanded="true" signature="1859:1982" placeholder="INSERT INTO hcp_sample_request... " />
+            <marker date="1464085738005" expanded="true" signature="2383:2547" placeholder="INSERT INTO hcp_literature_request... " />
+            <marker date="1464085738005" expanded="true" signature="2823:2892" placeholder="INSERT INTO hcp_news_letter... " />
+            <marker date="1464085738005" expanded="true" signature="3151:3202" placeholder="UPDATE hcp_u... " />
+            <marker date="1464085738005" expanded="true" signature="3158:3164" placeholder="SELECT * FRO... hcp_us" />
+            <marker date="1464085738005" expanded="true" signature="3158:3202" placeholder="SELECT * FRO... hcp_users" />
+            <marker date="1464085738005" expanded="true" signature="3522:3566" placeholder="SELECT * FRO... hcp_users" />
+            <marker date="1464085738005" expanded="true" signature="3881:3927" placeholder="SELECT * FRO... hcp_users" />
           </folding>
         </state>
       </provider>
@@ -444,7 +437,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5310">
           <caret line="354" column="15" selection-start-line="354" selection-start-column="15" selection-end-line="354" selection-end-column="15" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1464093918044" expanded="true" signature="12550:12617" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -452,7 +448,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6195">
           <caret line="413" column="47" selection-start-line="413" selection-start-column="47" selection-end-line="413" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -469,12 +464,17 @@
         <state relative-caret-position="180">
           <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
           <folding>
-            <marker date="1463655188030" expanded="true" signature="517:650" placeholder="INSERT INTO hcp_users... " />
-            <marker date="1463655188030" expanded="true" signature="958:1027" placeholder="SELECT * FRO... hcp_users" />
-            <marker date="1463655188030" expanded="true" signature="1381:1513" placeholder="INSERT INTO hcp_events... " />
-            <marker date="1463655188030" expanded="true" signature="1859:1982" placeholder="INSERT INTO hcp_sample_request... " />
-            <marker date="1463655188030" expanded="true" signature="2383:2547" placeholder="INSERT INTO hcp_literature_request... " />
-            <marker date="1463655188030" expanded="true" signature="2823:2892" placeholder="INSERT INTO hcp_literature_request... " />
+            <marker date="1464085738005" expanded="true" signature="517:650" placeholder="INSERT INTO hcp_users... " />
+            <marker date="1464085738005" expanded="true" signature="958:1027" placeholder="SELECT * FRO... hcp_users" />
+            <marker date="1464085738005" expanded="true" signature="1381:1513" placeholder="INSERT INTO hcp_events... " />
+            <marker date="1464085738005" expanded="true" signature="1859:1982" placeholder="INSERT INTO hcp_sample_request... " />
+            <marker date="1464085738005" expanded="true" signature="2383:2547" placeholder="INSERT INTO hcp_literature_request... " />
+            <marker date="1464085738005" expanded="true" signature="2823:2892" placeholder="INSERT INTO hcp_news_letter... " />
+            <marker date="1464085738005" expanded="true" signature="3151:3202" placeholder="UPDATE hcp_u... " />
+            <marker date="1464085738005" expanded="true" signature="3158:3164" placeholder="SELECT * FRO... hcp_us" />
+            <marker date="1464085738005" expanded="true" signature="3158:3202" placeholder="SELECT * FRO... hcp_users" />
+            <marker date="1464085738005" expanded="true" signature="3522:3566" placeholder="SELECT * FRO... hcp_users" />
+            <marker date="1464085738005" expanded="true" signature="3881:3927" placeholder="SELECT * FRO... hcp_users" />
           </folding>
         </state>
       </provider>
@@ -483,7 +483,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4965">
           <caret line="331" column="17" selection-start-line="331" selection-start-column="17" selection-end-line="331" selection-end-column="17" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1464093918044" expanded="true" signature="12550:12617" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -491,7 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -499,7 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6195">
           <caret line="413" column="47" selection-start-line="413" selection-start-column="47" selection-end-line="413" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -516,7 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="25" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -533,7 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="992" column="0" selection-start-line="992" selection-start-column="0" selection-end-line="992" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -549,7 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6195">
           <caret line="413" column="47" selection-start-line="413" selection-start-column="47" selection-end-line="413" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -569,7 +567,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
@@ -582,7 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1035">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -590,62 +586,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="14" />
-          <folding>
-            <marker date="1463655188030" expanded="true" signature="517:650" placeholder="INSERT INTO hcp_users... " />
-            <marker date="1463655188030" expanded="true" signature="958:1027" placeholder="SELECT * FRO... hcp_users" />
-            <marker date="1463655188030" expanded="true" signature="1381:1513" placeholder="INSERT INTO hcp_events... " />
-            <marker date="1463655188030" expanded="true" signature="1859:1982" placeholder="INSERT INTO hcp_sample_request... " />
-            <marker date="1463655188030" expanded="true" signature="2383:2547" placeholder="INSERT INTO hcp_literature_request... " />
-            <marker date="1463655188030" expanded="true" signature="2823:2892" placeholder="INSERT INTO hcp_literature_request... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/signin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-900">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/events.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="59" column="264" selection-start-line="59" selection-start-column="241" selection-end-line="59" selection-end-column="264" />
+        <state relative-caret-position="885">
+          <caret line="59" column="264" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="264" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1463664757290" expanded="true" signature="45718:45743" placeholder="..." />
             <marker date="1463664757290" expanded="true" signature="45922:45956" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/literature.php">
+    <entry file="file://$PROJECT_DIR$/signup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="60" column="268" selection-start-line="60" selection-start-column="268" selection-end-line="60" selection-end-column="268" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/supportcases.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="59" column="268" selection-start-line="59" selection-start-column="268" selection-end-line="59" selection-end-column="268" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="915">
+          <caret line="61" column="268" selection-start-line="61" selection-start-column="268" selection-end-line="61" selection-end-column="268" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -654,69 +613,7 @@
         <state relative-caret-position="436">
           <caret line="60" column="268" selection-start-line="60" selection-start-column="268" selection-end-line="60" selection-end-column="268" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1463664790258" expanded="true" signature="43031:43056" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/signup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="61" column="268" selection-start-line="61" selection-start-column="268" selection-end-line="61" selection-end-column="268" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="66" column="89" selection-start-line="66" selection-start-column="89" selection-end-line="66" selection-end-column="89" />
-          <folding>
-            <marker date="1463664845074" expanded="true" signature="11726:12188" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="11849:12156" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="12289:12767" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="12412:12735" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="12868:13301" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="12991:13269" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="13402:13866" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="13525:13834" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="14003:23797" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="23917:27613" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="23966:27597" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="24014:24467" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="24108:24443" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="24502:27577" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="24611:25045" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="24727:25017" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="25154:25574" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="25270:25546" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="25683:26024" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="25799:25996" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="26133:26535" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="26249:26507" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="26644:27046" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="26760:27018" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="27155:27553" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="27271:27525" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="27663:37190" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="37242:44536" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="44588:54385" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="54436:57856" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="57904:58392" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="58438:59886" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="58475:58872" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="58578:58852" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="58913:59790" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="58957:59251" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="59293:59640" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="59676:59770" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="59954:60093" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="60123:61033" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="61422:61481" placeholder="..." />
-            <marker date="1463664845074" expanded="true" signature="61456:61480" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -725,15 +622,278 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="22" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="66" column="89" selection-start-line="66" selection-start-column="89" selection-end-line="66" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/PHPMailer/examples/gmail.phps">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="57" column="14" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3d77bd4d/d9e270f6-fc24-4c06-9b8b-d7266c034c39/HCP.public.hcp_users">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3d77bd4d/d9e270f6-fc24-4c06-9b8b-d7266c034c39/HCP.public.hcp_users">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3d77bd4d/d9e270f6-fc24-4c06-9b8b-d7266c034c39/HCP.public.hcp_users">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3d77bd4d/d9e270f6-fc24-4c06-9b8b-d7266c034c39/HCP.public.hcp_users">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3d77bd4d/d9e270f6-fc24-4c06-9b8b-d7266c034c39/HCP.public.hcp_users">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3d77bd4d/d9e270f6-fc24-4c06-9b8b-d7266c034c39/HCP.public.hcp_users">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3d77bd4d/d9e270f6-fc24-4c06-9b8b-d7266c034c39/HCP.public.hcp_users">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3d77bd4d/d9e270f6-fc24-4c06-9b8b-d7266c034c39/HCP.public.hcp_users">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3d77bd4d/d9e270f6-fc24-4c06-9b8b-d7266c034c39/HCP.public.hcp_users">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3d77bd4d/d9e270f6-fc24-4c06-9b8b-d7266c034c39/HCP.public.hcp_users">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3d77bd4d/d9e270f6-fc24-4c06-9b8b-d7266c034c39/HCP.public.hcp_users">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3d77bd4d/d9e270f6-fc24-4c06-9b8b-d7266c034c39/HCP.public.hcp_users">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/PHPMailer/docs/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/PHPMailer/PHPMailerAutoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/literature.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-390">
+          <caret line="60" column="268" selection-start-line="60" selection-start-column="268" selection-end-line="60" selection-end-column="268" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="97" column="33" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+          <folding>
+            <marker date="1464085738005" expanded="true" signature="517:650" placeholder="INSERT INTO hcp_users... " />
+            <marker date="1464085738005" expanded="true" signature="958:1027" placeholder="SELECT * FRO... hcp_users" />
+            <marker date="1464085738005" expanded="true" signature="1381:1513" placeholder="INSERT INTO hcp_events... " />
+            <marker date="1464085738005" expanded="true" signature="1859:1982" placeholder="INSERT INTO hcp_sample_request... " />
+            <marker date="1464085738005" expanded="true" signature="2383:2547" placeholder="INSERT INTO hcp_literature_request... " />
+            <marker date="1464085738005" expanded="true" signature="2823:2892" placeholder="INSERT INTO hcp_news_letter... " />
+            <marker date="1464085738005" expanded="true" signature="3151:3202" placeholder="UPDATE hcp_u... " />
+            <marker date="1464085738005" expanded="true" signature="3158:3164" placeholder="SELECT * FRO... hcp_us" />
+            <marker date="1464085738005" expanded="true" signature="3158:3202" placeholder="SELECT * FRO... hcp_users" />
+            <marker date="1464085738005" expanded="true" signature="3522:3566" placeholder="SELECT * FRO... hcp_users" />
+            <marker date="1464085738005" expanded="true" signature="3881:3927" placeholder="SELECT * FRO... hcp_users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="175" column="9" selection-start-line="175" selection-start-column="9" selection-end-line="175" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supportcases.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2234">
+          <caret line="59" column="268" selection-start-line="59" selection-start-column="268" selection-end-line="59" selection-end-column="268" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="328" column="126" selection-start-line="328" selection-start-column="119" selection-end-line="328" selection-end-column="126" />
+        <state relative-caret-position="60">
+          <caret line="203" column="112" selection-start-line="203" selection-start-column="112" selection-end-line="203" selection-end-column="112" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/signin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2051">
+          <caret line="172" column="138" selection-start-line="172" selection-start-column="138" selection-end-line="172" selection-end-column="138" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1464093918044" expanded="true" signature="12550:12617" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resetpassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="353" column="13" selection-start-line="353" selection-start-column="13" selection-end-line="353" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1464094646792" expanded="true" signature="5837:5862" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/3d77bd4d/d9e270f6-fc24-4c06-9b8b-d7266c034c39/HCP.public.hcp_users">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
